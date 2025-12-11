@@ -1,0 +1,107 @@
+{
+  "features": [
+    {
+      "id": "data-import.xlsform.parse-structure",
+      "description": "Parse XLSForm (survey, choices, settings) to understand question structure and skip logic",
+      "module": "data-import",
+      "priority": 1,
+      "status": "failing",
+      "acceptance": [
+        "Parse XLSForm (survey, choices, settings) to understand question structure and skip logic works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/data-import/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "documentation.codebook.generate",
+      "description": "Generate codebook with variable names, labels, types, and response options",
+      "module": "documentation",
+      "priority": 2,
+      "status": "failing",
+      "acceptance": [
+        "Generate codebook with variable names, labels, types, and response options works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/documentation/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "documentation.appendix.survey-modules",
+      "description": "Create survey module documentation table for thesis appendix",
+      "module": "documentation",
+      "priority": 3,
+      "status": "failing",
+      "acceptance": [
+        "Create survey module documentation table for thesis appendix works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/documentation/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "documentation.construct-map.create",
+      "description": "Build construct-to-question mapping table linking indicators to survey items",
+      "module": "documentation",
+      "priority": 4,
+      "status": "failing",
+      "acceptance": [
+        "Build construct-to-question mapping table linking indicators to survey items works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/documentation/**/*.test.*"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "projectGoal": "Survey Understanding - Parse XLSForm, generate documentation, and understand survey structure",
+    "createdAt": "2025-12-10T22:37:00.000Z",
+    "updatedAt": "2025-12-10T22:37:00.000Z",
+    "version": "1.0.0",
+    "tddMode": "strict"
+  }
+}

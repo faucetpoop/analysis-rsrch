@@ -1,0 +1,155 @@
+{
+  "features": [
+    {
+      "id": "geospatial.data.load-gadm",
+      "description": "Load Vietnam administrative boundaries (GADM) at province/district level",
+      "module": "geospatial",
+      "priority": 1,
+      "status": "failing",
+      "acceptance": [
+        "Load Vietnam administrative boundaries (GADM) at province/district level works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/geospatial/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "geospatial.mapping.choropleth",
+      "description": "Create choropleth maps of food security indicators by geographic unit using tmap",
+      "module": "geospatial",
+      "priority": 2,
+      "status": "failing",
+      "acceptance": [
+        "Create choropleth maps of food security indicators by geographic unit using tmap works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/geospatial/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "geospatial.aggregation.survey-weighted",
+      "description": "Aggregate survey-weighted statistics by province for spatial analysis",
+      "module": "geospatial",
+      "priority": 3,
+      "status": "failing",
+      "acceptance": [
+        "Aggregate survey-weighted statistics by province for spatial analysis works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/geospatial/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "reporting.tables.descriptive-summary",
+      "description": "Generate Table 1 sample characteristics with gtsummary (survey-weighted)",
+      "module": "reporting",
+      "priority": 4,
+      "status": "failing",
+      "acceptance": [
+        "Generate Table 1 sample characteristics with gtsummary (survey-weighted) works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/reporting/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "reporting.tables.indicator-results",
+      "description": "Create indicator summary tables with means, proportions, and confidence intervals",
+      "module": "reporting",
+      "priority": 5,
+      "status": "failing",
+      "acceptance": [
+        "Create indicator summary tables with means, proportions, and confidence intervals works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/reporting/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "reporting.export.word-docx",
+      "description": "Export tables to Word format using flextable for thesis integration",
+      "module": "reporting",
+      "priority": 6,
+      "status": "failing",
+      "acceptance": [
+        "Export tables to Word format using flextable for thesis integration works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/reporting/**/*.test.*"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "projectGoal": "Analysis & Reporting - Geospatial analysis and thesis-ready reporting outputs",
+    "createdAt": "2025-12-10T22:37:00.000Z",
+    "updatedAt": "2025-12-10T22:37:00.000Z",
+    "version": "1.0.0",
+    "tddMode": "strict"
+  }
+}

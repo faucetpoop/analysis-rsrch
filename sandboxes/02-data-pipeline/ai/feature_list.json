@@ -1,0 +1,179 @@
+{
+  "features": [
+    {
+      "id": "core.config.project-setup",
+      "description": "Initialize R project with renv, folder structure, and CLAUDE.md context file",
+      "module": "core",
+      "priority": 1,
+      "status": "failing",
+      "acceptance": [
+        "Initialize R project with renv, folder structure, and CLAUDE.md context file works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/core/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "core.config.package-dependencies",
+      "description": "Define and install required packages (survey, srvyr, robotoolbox, sf, gtsummary, etc.)",
+      "module": "core",
+      "priority": 2,
+      "status": "failing",
+      "acceptance": [
+        "Define and install required packages (survey, srvyr, robotoolbox, sf, gtsummary, etc.) works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/core/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "data-import.kobo.api-connection",
+      "description": "Connect to KoboToolbox API using robotoolbox package with authentication",
+      "module": "data-import",
+      "priority": 3,
+      "status": "failing",
+      "acceptance": [
+        "Connect to KoboToolbox API using robotoolbox package with authentication works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/data-import/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "data-import.kobo.download-submissions",
+      "description": "Download survey submissions from KoboToolbox with select_multiple handling",
+      "module": "data-import",
+      "priority": 4,
+      "status": "failing",
+      "acceptance": [
+        "Download survey submissions from KoboToolbox with select_multiple handling works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/data-import/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "data-cleaning.versions.merge-ab",
+      "description": "Merge survey versions A (without food waste) and B (with food waste) with proper NA handling",
+      "module": "data-cleaning",
+      "priority": 5,
+      "status": "failing",
+      "acceptance": [
+        "Merge survey versions A (without food waste) and B (with food waste) with proper NA handling works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/data-cleaning/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "data-cleaning.multiselect.process",
+      "description": "Process select_multiple columns into binary indicators with proper labeling",
+      "module": "data-cleaning",
+      "priority": 6,
+      "status": "failing",
+      "acceptance": [
+        "Process select_multiple columns into binary indicators with proper labeling works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/data-cleaning/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "data-cleaning.missing.classify",
+      "description": "Classify missing data as structural (skip logic) vs non-response vs data error",
+      "module": "data-cleaning",
+      "priority": 7,
+      "status": "failing",
+      "acceptance": [
+        "Classify missing data as structural (skip logic) vs non-response vs data error works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/data-cleaning/**/*.test.*"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "projectGoal": "Data Pipeline - Import KoboToolbox data, clean and process survey responses",
+    "createdAt": "2025-12-10T22:37:00.000Z",
+    "updatedAt": "2025-12-10T22:37:00.000Z",
+    "version": "1.0.0",
+    "tddMode": "strict"
+  }
+}

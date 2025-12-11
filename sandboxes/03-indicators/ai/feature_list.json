@@ -1,0 +1,299 @@
+{
+  "features": [
+    {
+      "id": "indicators.hdds.calculate",
+      "description": "Calculate Household Dietary Diversity Score from 12 food groups with FAO methodology",
+      "module": "indicators",
+      "priority": 1,
+      "status": "failing",
+      "acceptance": [
+        "Calculate Household Dietary Diversity Score from 12 food groups with FAO methodology works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/indicators/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "indicators.hdds.categorize",
+      "description": "Categorize HDDS into low/medium/high dietary diversity classifications",
+      "module": "indicators",
+      "priority": 2,
+      "status": "failing",
+      "acceptance": [
+        "Categorize HDDS into low/medium/high dietary diversity classifications works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/indicators/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "indicators.fcs.calculate",
+      "description": "Calculate Food Consumption Score with WFP food group weights and thresholds",
+      "module": "indicators",
+      "priority": 3,
+      "status": "failing",
+      "acceptance": [
+        "Calculate Food Consumption Score with WFP food group weights and thresholds works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/indicators/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "indicators.rcsi.calculate",
+      "description": "Calculate reduced Coping Strategies Index with severity weights and IPC phase thresholds",
+      "module": "indicators",
+      "priority": 4,
+      "status": "failing",
+      "acceptance": [
+        "Calculate reduced Coping Strategies Index with severity weights and IPC phase thresholds works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/indicators/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "indicators.fies.rasch-model",
+      "description": "Implement FIES Rasch model analysis using RM.weights package for SDG 2.1.2",
+      "module": "indicators",
+      "priority": 5,
+      "status": "failing",
+      "acceptance": [
+        "Implement FIES Rasch model analysis using RM.weights package for SDG 2.1.2 works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/indicators/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "economics.income.aggregate",
+      "description": "Aggregate household income from multiple sources with VND currency handling",
+      "module": "economics",
+      "priority": 6,
+      "status": "failing",
+      "acceptance": [
+        "Aggregate household income from multiple sources with VND currency handling works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/economics/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "economics.expenditure.calculate-shares",
+      "description": "Calculate food expenditure share and categorize expenditure types",
+      "module": "economics",
+      "priority": 7,
+      "status": "failing",
+      "acceptance": [
+        "Calculate food expenditure share and categorize expenditure types works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/economics/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "economics.outliers.detect-handle",
+      "description": "Detect and handle income/expenditure outliers using winsorization or flagging",
+      "module": "economics",
+      "priority": 8,
+      "status": "failing",
+      "acceptance": [
+        "Detect and handle income/expenditure outliers using winsorization or flagging works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/economics/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "economics.benchmarks.vietnam-poverty",
+      "description": "Compare household economics to Vietnam poverty lines and World Bank benchmarks",
+      "module": "economics",
+      "priority": 9,
+      "status": "failing",
+      "acceptance": [
+        "Compare household economics to Vietnam poverty lines and World Bank benchmarks works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/economics/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "likert.coding.recode-scales",
+      "description": "Recode Likert responses to numeric scales with reverse coding where needed",
+      "module": "likert",
+      "priority": 10,
+      "status": "failing",
+      "acceptance": [
+        "Recode Likert responses to numeric scales with reverse coding where needed works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/likert/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "likert.reliability.cronbach-alpha",
+      "description": "Calculate Cronbach's alpha and item-total correlations using psych package",
+      "module": "likert",
+      "priority": 11,
+      "status": "failing",
+      "acceptance": [
+        "Calculate Cronbach's alpha and item-total correlations using psych package works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/likert/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "likert.visualization.diverging-bars",
+      "description": "Create diverging stacked bar charts for Likert responses using likert package",
+      "module": "likert",
+      "priority": 12,
+      "status": "failing",
+      "acceptance": [
+        "Create diverging stacked bar charts for Likert responses using likert package works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/likert/**/*.test.*"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "projectGoal": "Indicators - Calculate food security and economic indicators from survey data",
+    "createdAt": "2025-12-10T22:37:00.000Z",
+    "updatedAt": "2025-12-10T22:37:00.000Z",
+    "version": "1.0.0",
+    "tddMode": "strict"
+  }
+}

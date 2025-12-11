@@ -1,0 +1,708 @@
+{
+  "$schema": "./feature_list.schema.json",
+  "features": [
+    {
+      "id": "core.config.project-setup",
+      "description": "Initialize R project with renv, folder structure, and CLAUDE.md context file",
+      "module": "core",
+      "priority": 10,
+      "status": "failing",
+      "acceptance": [
+        "Initialize R project with renv, folder structure, and CLAUDE.md context file works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/core/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "core.config.package-dependencies",
+      "description": "Define and install required packages (survey, srvyr, robotoolbox, sf, gtsummary, etc.)",
+      "module": "core",
+      "priority": 11,
+      "status": "failing",
+      "acceptance": [
+        "Define and install required packages (survey, srvyr, robotoolbox, sf, gtsummary, etc.) works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/core/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "data-import.kobo.api-connection",
+      "description": "Connect to KoboToolbox API using robotoolbox package with authentication",
+      "module": "data-import",
+      "priority": 12,
+      "status": "failing",
+      "acceptance": [
+        "Connect to KoboToolbox API using robotoolbox package with authentication works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/data-import/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "data-import.kobo.download-submissions",
+      "description": "Download survey submissions from KoboToolbox with select_multiple handling",
+      "module": "data-import",
+      "priority": 13,
+      "status": "failing",
+      "acceptance": [
+        "Download survey submissions from KoboToolbox with select_multiple handling works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/data-import/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "data-import.xlsform.parse-structure",
+      "description": "Parse XLSForm (survey, choices, settings) to understand question structure and skip logic",
+      "module": "data-import",
+      "priority": 14,
+      "status": "failing",
+      "acceptance": [
+        "Parse XLSForm (survey, choices, settings) to understand question structure and skip logic works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/data-import/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "data-cleaning.versions.merge-ab",
+      "description": "Merge survey versions A (without food waste) and B (with food waste) with proper NA handling",
+      "module": "data-cleaning",
+      "priority": 15,
+      "status": "failing",
+      "acceptance": [
+        "Merge survey versions A (without food waste) and B (with food waste) with proper NA handling works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/data-cleaning/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "data-cleaning.multiselect.process",
+      "description": "Process select_multiple columns into binary indicators with proper labeling",
+      "module": "data-cleaning",
+      "priority": 16,
+      "status": "failing",
+      "acceptance": [
+        "Process select_multiple columns into binary indicators with proper labeling works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/data-cleaning/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "data-cleaning.missing.classify",
+      "description": "Classify missing data as structural (skip logic) vs non-response vs data error",
+      "module": "data-cleaning",
+      "priority": 17,
+      "status": "failing",
+      "acceptance": [
+        "Classify missing data as structural (skip logic) vs non-response vs data error works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/data-cleaning/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "indicators.hdds.calculate",
+      "description": "Calculate Household Dietary Diversity Score from 12 food groups with FAO methodology",
+      "module": "indicators",
+      "priority": 18,
+      "status": "failing",
+      "acceptance": [
+        "Calculate Household Dietary Diversity Score from 12 food groups with FAO methodology works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/indicators/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "indicators.hdds.categorize",
+      "description": "Categorize HDDS into low/medium/high dietary diversity classifications",
+      "module": "indicators",
+      "priority": 19,
+      "status": "failing",
+      "acceptance": [
+        "Categorize HDDS into low/medium/high dietary diversity classifications works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/indicators/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "indicators.fcs.calculate",
+      "description": "Calculate Food Consumption Score with WFP food group weights and thresholds",
+      "module": "indicators",
+      "priority": 20,
+      "status": "failing",
+      "acceptance": [
+        "Calculate Food Consumption Score with WFP food group weights and thresholds works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/indicators/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "indicators.rcsi.calculate",
+      "description": "Calculate reduced Coping Strategies Index with severity weights and IPC phase thresholds",
+      "module": "indicators",
+      "priority": 21,
+      "status": "failing",
+      "acceptance": [
+        "Calculate reduced Coping Strategies Index with severity weights and IPC phase thresholds works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/indicators/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "indicators.fies.rasch-model",
+      "description": "Implement FIES Rasch model analysis using RM.weights package for SDG 2.1.2",
+      "module": "indicators",
+      "priority": 22,
+      "status": "failing",
+      "acceptance": [
+        "Implement FIES Rasch model analysis using RM.weights package for SDG 2.1.2 works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/indicators/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "economics.income.aggregate",
+      "description": "Aggregate household income from multiple sources with VND currency handling",
+      "module": "economics",
+      "priority": 23,
+      "status": "failing",
+      "acceptance": [
+        "Aggregate household income from multiple sources with VND currency handling works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/economics/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "economics.expenditure.calculate-shares",
+      "description": "Calculate food expenditure share and categorize expenditure types",
+      "module": "economics",
+      "priority": 24,
+      "status": "failing",
+      "acceptance": [
+        "Calculate food expenditure share and categorize expenditure types works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/economics/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "economics.outliers.detect-handle",
+      "description": "Detect and handle income/expenditure outliers using winsorization or flagging",
+      "module": "economics",
+      "priority": 25,
+      "status": "failing",
+      "acceptance": [
+        "Detect and handle income/expenditure outliers using winsorization or flagging works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/economics/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "economics.benchmarks.vietnam-poverty",
+      "description": "Compare household economics to Vietnam poverty lines and World Bank benchmarks",
+      "module": "economics",
+      "priority": 26,
+      "status": "failing",
+      "acceptance": [
+        "Compare household economics to Vietnam poverty lines and World Bank benchmarks works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/economics/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "likert.coding.recode-scales",
+      "description": "Recode Likert responses to numeric scales with reverse coding where needed",
+      "module": "likert",
+      "priority": 27,
+      "status": "failing",
+      "acceptance": [
+        "Recode Likert responses to numeric scales with reverse coding where needed works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/likert/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "likert.reliability.cronbach-alpha",
+      "description": "Calculate Cronbach's alpha and item-total correlations using psych package",
+      "module": "likert",
+      "priority": 28,
+      "status": "failing",
+      "acceptance": [
+        "Calculate Cronbach's alpha and item-total correlations using psych package works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/likert/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "likert.visualization.diverging-bars",
+      "description": "Create diverging stacked bar charts for Likert responses using likert package",
+      "module": "likert",
+      "priority": 29,
+      "status": "failing",
+      "acceptance": [
+        "Create diverging stacked bar charts for Likert responses using likert package works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/likert/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "geospatial.data.load-gadm",
+      "description": "Load Vietnam administrative boundaries (GADM) at province/district level",
+      "module": "geospatial",
+      "priority": 30,
+      "status": "failing",
+      "acceptance": [
+        "Load Vietnam administrative boundaries (GADM) at province/district level works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/geospatial/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "geospatial.mapping.choropleth",
+      "description": "Create choropleth maps of food security indicators by geographic unit using tmap",
+      "module": "geospatial",
+      "priority": 31,
+      "status": "failing",
+      "acceptance": [
+        "Create choropleth maps of food security indicators by geographic unit using tmap works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/geospatial/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "geospatial.aggregation.survey-weighted",
+      "description": "Aggregate survey-weighted statistics by province for spatial analysis",
+      "module": "geospatial",
+      "priority": 32,
+      "status": "failing",
+      "acceptance": [
+        "Aggregate survey-weighted statistics by province for spatial analysis works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/geospatial/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "reporting.tables.descriptive-summary",
+      "description": "Generate Table 1 sample characteristics with gtsummary (survey-weighted)",
+      "module": "reporting",
+      "priority": 33,
+      "status": "failing",
+      "acceptance": [
+        "Generate Table 1 sample characteristics with gtsummary (survey-weighted) works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/reporting/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "reporting.tables.indicator-results",
+      "description": "Create indicator summary tables with means, proportions, and confidence intervals",
+      "module": "reporting",
+      "priority": 34,
+      "status": "failing",
+      "acceptance": [
+        "Create indicator summary tables with means, proportions, and confidence intervals works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/reporting/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "reporting.export.word-docx",
+      "description": "Export tables to Word format using flextable for thesis integration",
+      "module": "reporting",
+      "priority": 35,
+      "status": "failing",
+      "acceptance": [
+        "Export tables to Word format using flextable for thesis integration works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/reporting/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "documentation.codebook.generate",
+      "description": "Generate codebook with variable names, labels, types, and response options",
+      "module": "documentation",
+      "priority": 36,
+      "status": "failing",
+      "acceptance": [
+        "Generate codebook with variable names, labels, types, and response options works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/documentation/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "documentation.appendix.survey-modules",
+      "description": "Create survey module documentation table for thesis appendix",
+      "module": "documentation",
+      "priority": 37,
+      "status": "failing",
+      "acceptance": [
+        "Create survey module documentation table for thesis appendix works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/documentation/**/*.test.*"
+        }
+      }
+    },
+    {
+      "id": "documentation.construct-map.create",
+      "description": "Build construct-to-question mapping table linking indicators to survey items",
+      "module": "documentation",
+      "priority": 38,
+      "status": "failing",
+      "acceptance": [
+        "Build construct-to-question mapping table linking indicators to survey items works as expected"
+      ],
+      "dependsOn": [],
+      "supersedes": [],
+      "tags": [
+        "goal"
+      ],
+      "version": 1,
+      "origin": "init-auto",
+      "notes": "",
+      "testRequirements": {
+        "unit": {
+          "required": true,
+          "pattern": "tests/documentation/**/*.test.*"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "projectGoal": "Development of analysis-rsrch",
+    "createdAt": "2025-12-10T13:21:53.777Z",
+    "updatedAt": "2025-12-10T20:17:35.430Z",
+    "version": "1.0.0",
+    "tddMode": "strict"
+  }
+}
