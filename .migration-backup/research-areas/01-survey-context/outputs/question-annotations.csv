@@ -1,0 +1,11 @@
+question_id,variable_name,module,turner_domain,turner_subdomain,hlpe_position,downs_type,concept_measured,response_type,assumptions,weaknesses,recall_period,reverse_code,skip_logic,in_scope,feeds_indicator,notes
+,,,,,,,,,,,,,,,,
+,,[DEMOGRAPHICS],,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,[DIETARY DIVERSITY],,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,[FOOD ACCESS],,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,[INCOME/EXPENDITURE],,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,[OTHER MODULES],,,,,,,,,,,,,
