@@ -1,0 +1,24 @@
+question_id,variable_name,module,turner_domain,turner_subdomain,hlpe_position,downs_type,concept_measured,response_type,assumptions,weaknesses,recall_period,reverse_code,skip_logic,in_scope,feeds_indicator,notes
+Q1,consent,Consent,Context,N/A,N/A,N/A,Informed consent,select_one,Understands study,None,Current,No,None,Yes - control,None,Required for participation
+Q2,hh_size,Demographics,Context,N/A,N/A,N/A,Household composition,integer,Clear HH definition,May exclude temp members,Current,No,None,Yes - control,Per capita calcs,Control variable
+Q3,respondent_role,Demographics,Context,N/A,N/A,N/A,Position in household,select_one,Accurate self-ID,Social desirability,Current,No,None,Yes - control,Gender analysis,Who answered
+,,,,,,,,,,,,,,,,
+EXAMPLE_D1,food_grains,Dietary Diversity,Outcome,HDDS,Diet,N/A,Grain consumption,select_one,Recall accuracy,24hr may miss foods,24 hours,No,None,Yes - primary,HDDS,Food group 1/12
+EXAMPLE_D2,food_tubers,Dietary Diversity,Outcome,HDDS,Diet,N/A,Root/tuber consumption,select_one,Recall accuracy,24hr may miss foods,24 hours,No,None,Yes - primary,HDDS,Food group 2/12
+EXAMPLE_D3,food_veg,Dietary Diversity,Outcome,HDDS,Diet,N/A,Vegetable consumption,select_one,Recall accuracy,24hr may miss foods,24 hours,No,None,Yes - primary,HDDS,Food group 3/12
+,,,,,,,,,,,,,,,,
+EXAMPLE_M1,market_distance,Food Access,External,Market properties,Food environment,Informal/Formal,Distance to nearest market,integer,Accurate estimate,May vary by market type,Current,No,None,Yes - primary,Accessibility index,External determinant
+EXAMPLE_M2,market_type_primary,Food Access,External,Vendor properties,Food environment,Informal,Primary food source type,select_one,Understands categories,Social desirability,Weekly,No,None,Yes - primary,Vendor analysis,Downs typology mapping
+EXAMPLE_M3,vendor_frequency,Food Access,External,Vendor properties,Food environment,Varies,How often visit vendors,select_one,Recall accuracy,May aggregate,Weekly,No,None,Yes - primary,Access patterns,External determinant
+,,,,,,,,,,,,,,,,
+EXAMPLE_P1,food_price_perception,Affordability,Personal,Affordability,Consumer behavior,N/A,Perceived food prices,likert_5,Honest reporting,Subjective measure,Current,No,None,Yes - primary,Affordability index,Personal determinant
+EXAMPLE_P2,food_budget,Affordability,Personal,Affordability,Consumer behavior,N/A,Monthly food budget,integer,Accurate recall,Under-reporting,Monthly,No,None,Yes - primary,Expenditure share,Personal determinant
+,,,,,,,,,,,,,,,,
+EXAMPLE_C1,cooking_time,Convenience,Personal,Convenience,Consumer behavior,N/A,Daily cooking time,integer,Accurate estimate,May vary daily,Daily average,No,None,Yes - primary,Convenience score,Personal determinant
+EXAMPLE_C2,ready_food_freq,Convenience,Personal,Convenience,Consumer behavior,Modern,Ready-to-eat frequency,select_one,Recall accuracy,Definition varies,Weekly,No,None,Yes - primary,Convenience score,Personal determinant
+,,,,,,,,,,,,,,,,
+EXAMPLE_DS1,taste_preference,Desirability,Personal,Desirability,Consumer behavior,N/A,Taste importance,likert_5,Honest reporting,Social desirability,Current,No,None,Yes - primary,Desirability index,Personal determinant
+EXAMPLE_DS2,health_importance,Desirability,Personal,Desirability,Consumer behavior,N/A,Health consideration,likert_5,Honest reporting,Social desirability,Current,No,None,Yes - primary,Desirability index,Personal determinant
+,,,,,,,,,,,,,,,,
+EXAMPLE_I1,income_total,Income,Personal,Affordability,Consumer behavior,N/A,Total household income,integer,Accurate recall,Under-reporting likely,Monthly,No,None,Yes - primary,Income per capita,May need winsorizing
+EXAMPLE_I2,income_source,Income,Context,N/A,Consumer behavior,N/A,Primary income source,select_one,Knows main source,May have multiple,Current,No,None,Yes - control,Income diversity,Control variable
