@@ -1,0 +1,2974 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Vendor survey INCLUDING FOOD WASTE Long Bien 2024</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="Vietnamese (vi)" default="true()">
+          <text id="yes_no-0">
+            <value>CÓ</value>
+          </text>
+          <text id="yes_no-1">
+            <value>KHÔNG</value>
+          </text>
+          <text id="surveyors-0">
+            <value>Analyn</value>
+          </text>
+          <text id="surveyors-1">
+            <value>Angel</value>
+          </text>
+          <text id="surveyors-2">
+            <value>Emerson</value>
+          </text>
+          <text id="surveyors-3">
+            <value>Duy</value>
+          </text>
+          <text id="surveyors-4">
+            <value>Hanh</value>
+          </text>
+          <text id="surveyors-5">
+            <value>Mai Linh</value>
+          </text>
+          <text id="surveyors-6">
+            <value>Ha</value>
+          </text>
+          <text id="surveyors-7">
+            <value>Volunteer</value>
+          </text>
+          <text id="surveyors-8">
+            <value>Lisa-Marie</value>
+          </text>
+          <text id="vendortype-0">
+            <value>Siêu thị</value>
+          </text>
+          <text id="vendortype-1">
+            <value>Người bán hàng ở chợ</value>
+          </text>
+          <text id="vendortype-2">
+            <value>Người bán buôn</value>
+          </text>
+          <text id="vendortype-3">
+            <value>Người bán hàng rong bán thực phẩm tươi sống (ví dụ như rau/trái cây/thịt)</value>
+          </text>
+          <text id="vendortype-4">
+            <value>Nhà bán lẻ (tiệm bánh, cửa hàng thịt, cửa hàng đặc sản, v.v.)</value>
+          </text>
+          <text id="vendortype-5">
+            <value>Nhà hàng (ăn tại chỗ)</value>
+          </text>
+          <text id="vendortype-6">
+            <value>Xe tải bán đồ ăn / người bán hàng rong bán đồ ăn chế biến sẵn hoặc đồ ăn nhẹ</value>
+          </text>
+          <text id="gender-0">
+            <value>Nam</value>
+          </text>
+          <text id="gender-1">
+            <value>Nữ</value>
+          </text>
+          <text id="gender-2">
+            <value>Khác</value>
+          </text>
+          <text id="refuse_reasons-0">
+            <value>Họ không có nhà.</value>
+          </text>
+          <text id="refuse_reasons-1">
+            <value>Người đưa ra quyết định về thực phẩm không có ở nhà.</value>
+          </text>
+          <text id="refuse_reasons-2">
+            <value>Có lẽ họ đã về nhà nhưng không mở cửa.</value>
+          </text>
+          <text id="refuse_reasons-3">
+            <value>Không đưa ra lý do.</value>
+          </text>
+          <text id="refuse_reasons-4">
+            <value>Họ không thoải mái khi trả lời những câu hỏi khảo sát này.</value>
+          </text>
+          <text id="refuse_reasons-5">
+            <value>Họ không có thời gian.</value>
+          </text>
+          <text id="refuse_reasons-6">
+            <value>Other</value>
+          </text>
+          <text id="importancescale-0">
+            <value>Không quan trọng / không được tính đến</value>
+          </text>
+          <text id="importancescale-1">
+            <value>Trung bình / Trung tính</value>
+          </text>
+          <text id="importancescale-2">
+            <value>Rất quan trọng / ưu tiên</value>
+          </text>
+          <text id="transporttype-0">
+            <value>Đang ở nhà</value>
+          </text>
+          <text id="transporttype-1">
+            <value>Đi bộ</value>
+          </text>
+          <text id="transporttype-2">
+            <value>Xe đạp</value>
+          </text>
+          <text id="transporttype-3">
+            <value>Xe tay ga hoặc xe máy</value>
+          </text>
+          <text id="transporttype-4">
+            <value>Xe buýt/phương tiện công cộng</value>
+          </text>
+          <text id="transporttype-5">
+            <value>Tôi đang đi nhờ xe của ai đó</value>
+          </text>
+          <text id="transporttype-6">
+            <value>Taxi</value>
+          </text>
+          <text id="transporttype-7">
+            <value>Xe hơi hoặc xe tải nhỏ riêng</value>
+          </text>
+          <text id="transporttype-8">
+            <value>Xe công ty</value>
+          </text>
+          <text id="roadtype-0">
+            <value>Nhựa đường</value>
+          </text>
+          <text id="roadtype-1">
+            <value>Đường cát/đất</value>
+          </text>
+          <text id="whole_processed-0">
+            <value>Hầu hết là thực phẩm chưa qua chế biến/"nguyên chất"</value>
+          </text>
+          <text id="whole_processed-1">
+            <value>Chủ yếu là thực phẩm chế biến/sẵn sàng (bữa ăn, món ăn kèm, đồ ăn nhẹ, nước sốt…)</value>
+          </text>
+          <text id="tenurestatus-0">
+            <value>Người sở hữu nhà</value>
+          </text>
+          <text id="tenurestatus-1">
+            <value>Người thuê nhà</value>
+          </text>
+          <text id="tenurestatus-2">
+            <value>Người bảo vệ/người trông coi</value>
+          </text>
+          <text id="cookingsource-0">
+            <value>Điện</value>
+          </text>
+          <text id="cookingsource-1">
+            <value>Ga</value>
+          </text>
+          <text id="cookingsource-2">
+            <value>Ga sinh học</value>
+          </text>
+          <text id="cookingsource-3">
+            <value>Năng lượng mặt trời</value>
+          </text>
+          <text id="cookingsource-4">
+            <value>Than</value>
+          </text>
+          <text id="cookingsource-5">
+            <value>Gỗ</value>
+          </text>
+          <text id="cookingsource-6">
+            <value>Parafin</value>
+          </text>
+          <text id="utilities-0">
+            <value>Internet (cáp/wifi lắp đặt trong nhà)</value>
+          </text>
+          <text id="utilities-1">
+            <value>Điện thoại thông minh hoặc máy tính bảng có kết nối internet</value>
+          </text>
+          <text id="utilities-2">
+            <value>Tivi</value>
+          </text>
+          <text id="utilities-3">
+            <value>Điều hòa không khí</value>
+          </text>
+          <text id="utilities-4">
+            <value>Máy tính (PC/laptop/desktop)</value>
+          </text>
+          <text id="agreescale-0">
+            <value>Không đồng ý (hoàn toàn/hoàn toàn không đồng ý)</value>
+          </text>
+          <text id="agreescale-1">
+            <value>Không đồng ý chút nào</value>
+          </text>
+          <text id="agreescale-2">
+            <value>Trung lập (như những nơi khác/không quan tâm/không biết gì)</value>
+          </text>
+          <text id="agreescale-3">
+            <value>Đồng ý một chút</value>
+          </text>
+          <text id="agreescale-4">
+            <value>Đồng ý (hoàn toàn/hoàn toàn đồng ý/hoàn toàn đồng ý)</value>
+          </text>
+          <text id="foodgroups-0">
+            <value>LƯƠNG THỰC (ngô, gạo, lúa mì, bánh mì, mì, cháo, mì ống, v.v.)</value>
+          </text>
+          <text id="foodgroups-1">
+            <value>RỄ VÀ CỦ TRẮNG (khoai tây, khoai lang, khoai môn, sắn trắng,… hoặc các loại rễ khác)</value>
+          </text>
+          <text id="foodgroups-2">
+            <value>RAU CỦ CÓ VITAMIN A (bí ngô, cà rốt, ớt chuông (bất kỳ loại nào có màu cam bên trong))</value>
+          </text>
+          <text id="foodgroups-3">
+            <value>RAU LÁ XANH ĐẬM (lá cải, lá sắn, rau mồng tơi, rau ngót, bắp cải,...)</value>
+          </text>
+          <text id="foodgroups-4">
+            <value>CÁC LOẠI RAU KHÁC (cà chua, hành tây, hành lá, cà tím, đậu bắp,...)</value>
+          </text>
+          <text id="foodgroups-5">
+            <value>TRÁI CÂY CÓ VITAMIN A (xoài, dưa, đu đủ, dưa hấu, chanh dây, bưởi,... hoặc 100% nước ép của chúng)</value>
+          </text>
+          <text id="foodgroups-6">
+            <value>TRÁI CÂY KHÁC (chuối, cam, acai, quả mọng, anh đào, thanh long, vải, chôm chôm, táo, lựu, chanh,... hoặc 100% nước ép của những loại này)</value>
+          </text>
+          <text id="foodgroups-7">
+            <value>THỊT NỘI TẾ (gan, thận, tim hoặc các loại thịt nội tạng khác)</value>
+          </text>
+          <text id="foodgroups-8">
+            <value>CÁC LOẠI THỊT KHÁC (thịt bò, thịt lợn, thịt cừu, thịt dê, thịt thỏ, thịt thú rừng, thịt gà, côn trùng...)</value>
+          </text>
+          <text id="foodgroups-9">
+            <value>TRỨNG (gà, vịt hoặc loại khác)</value>
+          </text>
+          <text id="foodgroups-10">
+            <value>CÁ VÀ HẢI SẢN (cá hoặc động vật có vỏ (tươi hoặc khô))</value>
+          </text>
+          <text id="foodgroups-11">
+            <value>CÁC LOẠI ĐẬU, HẠT VÀ HẠT GIỐNG (đậu đen, đậu đỏ, đậu xanh, đỗ, đậu Hà Lan, đậu lăng, sim, các loại hạt, hạt dẻ, hạnh nhân, đậu phộng hoặc thực phẩm làm từ những loại này)</value>
+          </text>
+          <text id="foodgroups-12">
+            <value>SỮA VÀ CÁC SẢN PHẨM TỪ SỮA (sữa, pho mát, sữa chua hoặc các loại khác)</value>
+          </text>
+          <text id="foodgroups-13">
+            <value>DẦU VÀ CHẤT BÉO (dầu, chất béo hoặc bơ được thêm vào thực phẩm hoặc dùng để nấu ăn)</value>
+          </text>
+          <text id="foodgroups-14">
+            <value>ĐỒ NGỌT (đường, mật ong, nước ngọt có đường hoặc nước ép trái cây có đường, thực phẩm có đường như sô cô la, kẹo, bánh quy và bánh ngọt)</value>
+          </text>
+          <text id="foodgroups-15">
+            <value>THẢO MỘC, SỐT, ĐỒ UỐNG (gia vị, hạt tiêu, muối, nước tương, nước sốt cay, cà phê, trà, đồ uống có cồn)</value>
+          </text>
+          <text id="foodenvlocation-0">
+            <value>Ở đây (thực phẩm bán tận nhà/tại nhà có doanh nghiệp)</value>
+          </text>
+          <text id="foodenvlocation-1">
+            <value>Trên con phố này</value>
+          </text>
+          <text id="foodenvlocation-2">
+            <value>Trong khu dân cư này</value>
+          </text>
+          <text id="foodenvlocation-3">
+            <value>Trong khu nghỉ mát này</value>
+          </text>
+          <text id="foodenvlocation-4">
+            <value>Nơi khác ở quận Long Biên</value>
+          </text>
+          <text id="foodenvlocation-5">
+            <value>Ở trung tâm thành phố (Hà Nội)</value>
+          </text>
+          <text id="foodenvlocation-6">
+            <value>Nơi khác ở Việt Nam</value>
+          </text>
+          <text id="foodenvlocation-7">
+            <value>Ở nước ngoài (ví dụ như Guiana thuộc Pháp)</value>
+          </text>
+          <text id="foodenvreason-0">
+            <value>Tôi biết rõ nhà cung cấp/nguồn này (tin tưởng)</value>
+          </text>
+          <text id="foodenvreason-1">
+            <value>Giá rẻ</value>
+          </text>
+          <text id="foodenvreason-2">
+            <value>Khoảng cách gần</value>
+          </text>
+          <text id="foodenvreason-3">
+            <value>Họ có những lựa chọn đúng</value>
+          </text>
+          <text id="foodenvreason-4">
+            <value>Họ có sản phẩm chất lượng tốt</value>
+          </text>
+          <text id="foodenvreason-5">
+            <value>Họ cung cấp nguồn hàng đa dạng/hoặc độc đáo</value>
+          </text>
+          <text id="receivegive-0">
+            <value>Có, đôi khi chúng tôi nhận được thức ăn (ví dụ từ gia đình, hàng xóm, bạn bè, nhà thờ, trường học,…)</value>
+          </text>
+          <text id="receivegive-1">
+            <value>Có, đôi khi chúng tôi tặng thức ăn (ví dụ cho gia đình, hàng xóm, bạn bè, nhà thờ, trường học,…)</value>
+          </text>
+          <text id="receivegive-2">
+            <value>Không, chúng tôi không chia sẻ thức ăn và không nhận thức ăn từ bất kỳ ai</value>
+          </text>
+          <text id="dayweek-0">
+            <value>Ngày</value>
+          </text>
+          <text id="dayweek-1">
+            <value>Tuần</value>
+          </text>
+          <text id="frequency-0">
+            <value>hai lần hoặc nhiều hơn mỗi ngày</value>
+          </text>
+          <text id="frequency-1">
+            <value>một lần mỗi ngày</value>
+          </text>
+          <text id="frequency-2">
+            <value>một vài lần một tuần</value>
+          </text>
+          <text id="frequency-3">
+            <value>một vài lần một tháng</value>
+          </text>
+          <text id="frequency-4">
+            <value>một vài lần một năm</value>
+          </text>
+          <text id="frequency-5">
+            <value>hiếm khi</value>
+          </text>
+          <text id="frequency-6">
+            <value>không biết</value>
+          </text>
+          <text id="previouslocation-0">
+            <value>Đây là nơi đầu tiên tôi bán đồ ăn, tôi chưa từng bán đồ ăn ở bất kỳ nơi nào khác.</value>
+          </text>
+          <text id="previouslocation-1">
+            <value>Ở một phần khác của Long Biên</value>
+          </text>
+          <text id="previouslocation-2">
+            <value>Ở Hà Nội</value>
+          </text>
+          <text id="previouslocation-3">
+            <value>Ở một nơi khác trong nước, ngoài Hà Nội/Long Biên</value>
+          </text>
+          <text id="previouslocation-4">
+            <value>Trước đây tôi đã bán thực phẩm ở nước ngoài</value>
+          </text>
+          <text id="ethnicity-0">
+            <value>Kinh</value>
+          </text>
+          <text id="ethnicity-1">
+            <value>Mường</value>
+          </text>
+          <text id="ethnicity-2">
+            <value>Tay</value>
+          </text>
+          <text id="ethnicity-3">
+            <value>Thái</value>
+          </text>
+          <text id="ethnicity-4">
+            <value>Lai</value>
+          </text>
+          <text id="ethnicity-5">
+            <value>Khác</value>
+          </text>
+          <text id="ethnicity-6">
+            <value>Tôi không biết</value>
+          </text>
+          <text id="longbien_neighbourhoods-0">
+            <value>An Lac</value>
+          </text>
+          <text id="longbien_neighbourhoods-1">
+            <value>Độc Lập</value>
+          </text>
+          <text id="longbien_neighbourhoods-2">
+            <value>Dong Du Ha</value>
+          </text>
+          <text id="longbien_neighbourhoods-3">
+            <value>Duc Giang</value>
+          </text>
+          <text id="longbien_neighbourhoods-4">
+            <value>Khu Tập Thể 918</value>
+          </text>
+          <text id="longbien_neighbourhoods-5">
+            <value>Làng Trạm</value>
+          </text>
+          <text id="longbien_neighbourhoods-6">
+            <value>Lam Du / Bo De</value>
+          </text>
+          <text id="longbien_neighbourhoods-7">
+            <value>Pho Le Mat</value>
+          </text>
+          <text id="longbien_neighbourhoods-8">
+            <value>Phúc Lợi</value>
+          </text>
+          <text id="longbien_neighbourhoods-9">
+            <value>Sài Đồng</value>
+          </text>
+          <text id="longbien_neighbourhoods-10">
+            <value>Thạch Bàn</value>
+          </text>
+          <text id="longbien_neighbourhoods-11">
+            <value>Thạch Cầu (Đông)</value>
+          </text>
+          <text id="longbien_neighbourhoods-12">
+            <value>Thạch Cầu (Tây)</value>
+          </text>
+          <text id="longbien_neighbourhoods-13">
+            <value>Thống Nhất</value>
+          </text>
+          <text id="longbien_neighbourhoods-14">
+            <value>Thôn Ngô</value>
+          </text>
+          <text id="longbien_neighbourhoods-15">
+            <value>Thôn Vàng</value>
+          </text>
+          <text id="longbien_neighbourhoods-16">
+            <value>Thượng Hội</value>
+          </text>
+          <text id="longbien_neighbourhoods-17">
+            <value>Tư Đình</value>
+          </text>
+          <text id="longbien_neighbourhoods-18">
+            <value>Viet Hung</value>
+          </text>
+          <text id="longbien_neighbourhoods-19">
+            <value>Vinhomes Riverside</value>
+          </text>
+          <text id="longbien_neighbourhoods-20">
+            <value>Xóm Bài</value>
+          </text>
+          <text id="longbien_neighbourhoods-21">
+            <value>Xóm Lẻ</value>
+          </text>
+          <text id="longbien_neighbourhoods-22">
+            <value>Xuân Đỗ Hạ</value>
+          </text>
+          <text id="longbien_neighbourhoods-23">
+            <value>Nơi khác ở Long Biên</value>
+          </text>
+          <text id="typh_prepare-0">
+            <value>Dự trữ nhu yếu phẩm: mua và dự trữ thêm thực phẩm, đặc biệt là hàng hóa không dễ hư hỏng như gạo, mì khô và các sản phẩm đóng hộp.</value>
+          </text>
+          <text id="typh_prepare-1">
+            <value>Đảm bảo hàng tồn kho: Bảo vệ các mặt hàng (dễ hư hỏng) bằng cách lưu trữ chúng ở những nơi được bảo vệ trong cửa hàng này.</value>
+          </text>
+          <text id="typh_prepare-2">
+            <value>Đảm bảo hàng tồn kho: Bảo vệ các mặt hàng (dễ hư hỏng) bằng cách di chuyển chúng đến những địa điểm an toàn hơn, tránh xa các khu vực dễ bị lũ lụt.</value>
+          </text>
+          <text id="typh_prepare-3">
+            <value>Điều chỉnh giờ kinh doanh: Đóng cửa tạm thời trước khi bão đến hoặc hoạt động trong thời gian ngắn hơn để đảm bảo an toàn.</value>
+          </text>
+          <text id="typh_prepare-4">
+            <value>Di dời hoạt động đến những địa điểm an toàn hơn</value>
+          </text>
+          <text id="typh_prepare-5">
+            <value>Tăng cường/gia cố cơ sở hạ tầng để chống chọi với gió mạnh và mưa lớn (sử dụng bạt, bao cát, gỗ hoặc các vật liệu ổn định khác)</value>
+          </text>
+          <text id="typh_prepare-6">
+            <value>Đa dạng hóa sản phẩm cung cấp: bằng cách tập trung vào các mặt hàng có sẵn và dễ dự trữ hoặc vận chuyển sau bão.</value>
+          </text>
+          <text id="typh_prepare-7">
+            <value>Hợp tác với các nhà cung cấp địa phương: Xây dựng mối quan hệ với nông dân và nhà cung cấp địa phương, những người có thể dễ tiếp cận hơn sau cơn bão</value>
+          </text>
+          <text id="typh_prepare-8">
+            <value>Tiết kiệm tiền mặt cho các trường hợp khẩn cấp: Giữ tiền mặt dự trữ để trang trải chi phí hoạt động hoặc cung ứng</value>
+          </text>
+          <text id="typh_prepare-9">
+            <value>Giao tiếp với khách hàng: Thông báo cho khách hàng thường xuyên về những thay đổi tạm thời trong hoạt động thông qua phương tiện truyền thông xã hội, ứng dụng nhắn tin hoặc truyền miệng.</value>
+          </text>
+          <text id="typh_prepare-10">
+            <value>Lập kế hoạch dự phòng cho tình trạng mất điện: các giải pháp dự phòng như máy phát điện hoặc hộp đá để giữ thực phẩm dễ hỏng tươi nếu mất điện.</value>
+          </text>
+          <text id="typh_cope-0">
+            <value>Đóng cửa hàng/quầy hàng cho đến khi gió/lũ lụt hoàn toàn dừng lại (đóng cửa nhiều ngày)</value>
+          </text>
+          <text id="typh_cope-1">
+            <value>Đóng cửa hàng/quầy hàng cho đến khi bão hoàn toàn dừng lại, nhưng vẫn mở cửa trong thời gian lũ lụt (đóng cửa một ngày)</value>
+          </text>
+          <text id="typh_cope-2">
+            <value>Ở trong nhà (ở nhà, không ở gần hoặc gần cửa hàng này)</value>
+          </text>
+          <text id="typh_cope-3">
+            <value>Ở trong nhà (ở nhà, ở đây)</value>
+          </text>
+          <text id="typh_cope-4">
+            <value>Giảm giá thực phẩm để thu hút nhiều khách hàng hơn.</value>
+          </text>
+          <text id="typh_cope-5">
+            <value>Giảm giá thực phẩm, vì cần thiết hoặc vì mọi người sẵn sàng trả nhiều tiền hơn sau cơn bão.</value>
+          </text>
+          <text id="typh_cope-6">
+            <value>Chia sẻ/trao đổi thực phẩm với những người bán hàng khác</value>
+          </text>
+          <text id="typh_financial-0">
+            <value>Tổn thất tài chính nghiêm trọng, không được phục hồi</value>
+          </text>
+          <text id="typh_financial-1">
+            <value>Tổn thất tài chính nghiêm trọng, phục hồi một phần</value>
+          </text>
+          <text id="typh_financial-2">
+            <value>Tổn thất tài chính nghiêm trọng, phục hồi hoàn toàn</value>
+          </text>
+          <text id="typh_financial-3">
+            <value>Tổn thất tài chính vừa phải, không được phục hồi</value>
+          </text>
+          <text id="typh_financial-4">
+            <value>Tổn thất tài chính vừa phải, bên được phục hồi</value>
+          </text>
+          <text id="typh_financial-5">
+            <value>Tổn thất tài chính vừa phải, phục hồi hoàn toàn</value>
+          </text>
+          <text id="typh_financial-6">
+            <value>Không có tổn thất tài chính nào cả</value>
+          </text>
+          <text id="typh_financial-7">
+            <value>Tình hình tài chính tốt hơn trước</value>
+          </text>
+          <text id="typh_damages-0">
+            <value>Thiệt hại vật chất nghiêm trọng, không được phục hồi</value>
+          </text>
+          <text id="typh_damages-1">
+            <value>Thiệt hại vật chất nghiêm trọng, phục hồi một phần</value>
+          </text>
+          <text id="typh_damages-2">
+            <value>Thiệt hại vật chất nghiêm trọng, phục hồi hoàn toàn</value>
+          </text>
+          <text id="typh_damages-3">
+            <value>Thiệt hại vật chất vừa phải, không được phục hồi</value>
+          </text>
+          <text id="typh_damages-4">
+            <value>Thiệt hại vật chất vừa phải, bên được phục hồi</value>
+          </text>
+          <text id="typh_damages-5">
+            <value>Thiệt hại vật chất vừa phải, phục hồi hoàn toàn</value>
+          </text>
+          <text id="typh_damages-6">
+            <value>Không có thiệt hại vật chất nào cả</value>
+          </text>
+          <text id="wastequantities-0">
+            <value>Không</value>
+          </text>
+          <text id="wastequantities-1">
+            <value>Dưới 100 g</value>
+          </text>
+          <text id="wastequantities-2">
+            <value>Dưới 500 g</value>
+          </text>
+          <text id="wastequantities-3">
+            <value>Dưới 1 kg</value>
+          </text>
+          <text id="wastequantities-4">
+            <value>Dưới 3 kg</value>
+          </text>
+          <text id="wastequantities-5">
+            <value>Dưới 5 kg</value>
+          </text>
+          <text id="wastequantities-6">
+            <value>Trên 5 kg</value>
+          </text>
+          <text id="wastereasons-0">
+            <value>Chất lượng kém (bị giảm sút)</value>
+          </text>
+          <text id="wastereasons-1">
+            <value>Đã qua ngày 'sử dụng'</value>
+          </text>
+          <text id="wastereasons-2">
+            <value>Không ngon, không thích mùi vị hoặc không hài lòng với thức ăn sau khi ăn vài miếng</value>
+          </text>
+          <text id="wastereasons-3">
+            <value>Tôi đã làm hoặc gọi quá nhiều thức ăn</value>
+          </text>
+          <text id="wastereasons-4">
+            <value>Tôi có quá nhiều nguyên liệu để nấu mà tôi không sử dụng</value>
+          </text>
+          <text id="wastereasons-5">
+            <value>Khác</value>
+          </text>
+          <text id="wasteuses-0">
+            <value>Vứt bỏ (vào thùng rác)</value>
+          </text>
+          <text id="wasteuses-1">
+            <value>Cho hàng xóm, bạn bè hoặc gia đình</value>
+          </text>
+          <text id="wasteuses-2">
+            <value>Mang đến ngân hàng thực phẩm</value>
+          </text>
+          <text id="wasteuses-3">
+            <value>Ủ phân cộng đồng</value>
+          </text>
+          <text id="wasteuses-4">
+            <value>Ủ phân hộ gia đình</value>
+          </text>
+          <text id="wasteuses-5">
+            <value>Sử dụng làm thức ăn cho động vật</value>
+          </text>
+          <text id="wasteuses-6">
+            <value>Khác</value>
+          </text>
+          <text id="dayweekmonth-0">
+            <value>Ngày</value>
+          </text>
+          <text id="dayweekmonth-1">
+            <value>Tuần</value>
+          </text>
+          <text id="dayweekmonth-2">
+            <value>Tháng</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general:label">
+            <value>Tổng quan</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/location:label">
+            <value>QUAN TRỌNG: Vui lòng ghi lại VỊ TRÍ GPS cho cuộc khảo sát này trước khi bạn cố gắng liên lạc với người trả lời.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/surveyorname:label">
+            <value>Người khảo sát là ai?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/vendortype:label">
+            <value>Nhà cung cấp thực phẩm loại nào?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/GI_I_THI_U_Xin_ch_o_l_i_n_i_c_a_b_n_ch_a:label">
+            <value> GIỚI THIỆU: Xin chào, tôi tên là <output value=" /aXPD7SjcAqN7pmqJe3mFbA/general/surveyorname "/> và tôi là sinh viên tại Đại học… Chúng tôi đang tiến hành khảo sát để tìm hiểu về hệ thống thực phẩm tại Long Biên. Chúng tôi muốn hỏi bạn một vài câu hỏi về doanh nghiệp của bạn, khu phố và lý do bạn bán thực phẩm ở đó. Chúng tôi dự kiến cuộc khảo sát này sẽ mất khoảng 10 phút của bạn. Bạn có thể chọn không trả lời một hoặc nhiều câu hỏi. Tất nhiên, bạn cũng có thể chọn dừng cuộc phỏng vấn bất cứ lúc nào. Không có câu trả lời đúng hay sai. Cuộc phỏng vấn này là ẩn danh: chúng tôi sẽ không hỏi tên của bạn. Chúng tôi sẽ không chia sẻ dữ liệu cá nhân của bạn và dữ liệu này sẽ được xử lý chủ yếu tại KU Leuven ở Bỉ. Chúng tôi muốn hiểu rõ hơn về hệ thống thực phẩm: ai ăn loại thực phẩm nào ở Long Biên? Thực phẩm này được lấy ở đâu, gần đó hay ở nơi nào khác? Đây là những câu hỏi của chúng tôi cho mục đích nghiên cứu học thuật. Cuộc khảo sát được tiến hành dưới dạng kỹ thuật số. Tôi cũng có thể cung cấp cho bạn một tờ thông tin chi tiết trên giấy nếu bạn muốn. Chúng tôi đã có sự đồng ý bằng lời nói của bạn chưa? </value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/verbalconsent:label">
+            <value>Người trả lời đồng ý và hiểu mục đích của nghiên cứu. KHÔNG tiến hành nếu không có sự đồng ý.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/Kh_ng_c_ph_p_D_ng_a_ra_l_do_t_ch_i:label">
+            <value>Không được phép. Dừng khảo sát ngay lập tức. Ghi chú lý do sau đó, nếu người trả lời đưa ra lý do từ chối.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/refusalreason:label">
+            <value>Lý do từ chối:</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/neighborhood:label">
+            <value>Hỏi người trả lời: Tên của khu phố nơi bạn bán đồ ăn là gì?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/vendor:label">
+            <value>Đặc điểm và vị trí của nhà cung cấp</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_gender:label">
+            <value>Giới tính của người trả lời/người bán</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/vendor/age:label">
+            <value>Bạn bao nhiêu tuổi?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_owner:label">
+            <value>Người trả lời có phải là chủ sở hữu/người điều hành chính của doanh nghiệp này không?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/vendor/staff:label">
+            <value>Có bao nhiêu người làm việc ở đây (bao gồm cả bạn)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_ethn:label">
+            <value>Dân tộc của bạn là gì?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity:label">
+            <value>Những loại thực phẩm nào được bán ở đây?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity/foodgroups:label">
+            <value>Mô tả các sản phẩm thực phẩm (đồ ăn bình thường và đồ ăn nhẹ) mà bạn bán tại địa điểm này.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity/wholeorprocessed:label">
+            <value>Người khảo sát: Bạn thấy chủ yếu là thực phẩm chưa qua chế biến (ví dụ như rau củ, trái cây, thịt, v.v.) hay chủ yếu là thực phẩm đã chế biến/đóng hộp sẵn (đồ ăn nhẹ, nước sốt, v.v.)?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/location_001:label">
+            <value>Vị trí nhà cung cấp</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/location_001/locationtime:label">
+            <value>Bạn đã hoạt động kinh doanh thực phẩm TẠI ĐỊA ĐIỂM NÀY (cụ thể là ở đây) bao nhiêu năm rồi?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/location_001/previouslocation:label">
+            <value>Đây có phải là địa điểm đầu tiên bạn bán đồ ăn không? Nếu không, trước đây bạn đã bán đồ ăn ở ĐÂU?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/location_001/previouslocationNUA:label">
+            <value>Trước đây bạn từng hoạt động bán hàng rong ở khu vực nào tại Long Biên?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/location_001/homelocation:label">
+            <value>Bạn sống ở vùng nào?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/location_001/reason:label">
+            <value>Lý do chính khiến bạn bắt đầu bán thực phẩm/khởi nghiệp ở địa điểm này là gì?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors:label">
+            <value> Hãy nghĩ lại khi bạn mới bắt đầu kinh doanh tại đây, ở <output value=" /aXPD7SjcAqN7pmqJe3mFbA/location_001/locationtime "/>. Các yếu tố sau đây quan trọng như thế nào đối với bạn khi bán thực phẩm tại địa điểm này? </value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/bridge_city:label">
+            <value>Khoảng cách đến cầu (trung tâm thành phố).</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/customers_neighb:label">
+            <value>Có nhiều khách hàng sống ở khu vực này.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/customers_passersby:label">
+            <value>Nhiều khách hàng ĐI QUA con phố này vì họ đang trên đường đi làm/về nhà hoặc làm việc gần đó.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/supplychain:label">
+            <value>Khoảng cách tới nhà cung cấp/nhà bán buôn.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/safe_reputation:label">
+            <value> Khi bạn quyết định bán ở đây, tại <output value=" /aXPD7SjcAqN7pmqJe3mFbA/location_001/locationtime "/>, bạn quan tâm đến điều gì: SỰ AN TOÀN của khu phố/uy tín tốt </value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/flooding:label">
+            <value>Vị trí này khó bị LŨ LỤT ngập</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/infrastructure:label">
+            <value>CƠ SỞ HẠ TẦNG chung (điện, khí đốt, đường trải nhựa, v.v.)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/presence:label">
+            <value>Ở đây có những người kinh doanh thực phẩm khác (ví dụ nếu đã có một khu chợ ở đây và bạn có thể tham gia)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/absence:label">
+            <value>KHÔNG CÓ nhà cung cấp thực phẩm khác (thiếu nguồn cung ở khu vực này/trên thị trường ít/bạn là người duy nhất kinh doanh tại đây)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/schools:label">
+            <value> Hãy nghĩ lại về <output value=" /aXPD7SjcAqN7pmqJe3mFbA/location_001/locationtime "/>, khi bạn quyết định kinh doanh ở đây. Khoảng cách từ vị trí của bạn đến trường quan trọng như thế nào </value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/leisure:label">
+            <value>Khoảng cách đến các khu vực GIẢI TRÍ (thể thao, phòng tập gym, chỗ xem ca nhạc, công viên…)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements:label">
+            <value>Nhà cung cấp báo cáo</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/B_n_ng_hay_kh_ng_h_ng_tuy_n_b_sau_y:label">
+            <value>Bạn đồng ý hay không đồng ý (hoặc trung lập) với những tuyên bố sau đây?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/customers_wealth:label">
+            <value>Những khách hàng mua đồ ăn hầu hết đều là người có điều kiện.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/customers_ethn:label">
+            <value>Những khách hàng mua thực phẩm của tôi chủ yếu từ một nhóm dân tộc cụ thể.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/rathersomewhereelse:label">
+            <value>Tôi muốn kinh doanh đồ ăn ở nơi khác (bất kỳ nơi nào khác), nhưng đây là địa điểm phù hợp vơi điều kiện tài chính của tôi.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/ratherothersector:label">
+            <value>Tôi muốn mở một doanh nghiệp khác, nhưng kinh doanh thực phẩm là công việc đem lại lợi nhuận duy nhất đối với tôi hiện tại.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/_5yr_changesector:label">
+            <value>có kế hoạch ngừng kinh doanh thực phẩm trong năm năm tới.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/_5yr_changelocation:label">
+            <value>Tôi dự định sẽ tiếp tục kinh doanh thực phẩm trong năm năm tới nhưng sẽ thay đổi địa điểm.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/typhoon:label">
+            <value>Typhoon_Yagi</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/B_y_gi_h_y_ngh_n_ng_g_n_y_nh_t_Yagi:label">
+            <value>Bây giờ, hãy nghĩ đến sự kiện Bão nghiêm trọng gần đây nhất (Yagi).</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_prepare:label">
+            <value>Bạn đã thực hiện hoạt động nào sau đây trong những ngày trước khi Bão đổ bộ để chuẩn bị? (liên quan đến hoạt động bán thực phẩm)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_cope:label">
+            <value>Bạn đã thực hiện hoạt động ứng phó nào sau đây trong thời gian Bão đổ bộ và lũ lụt sau bão? (liên quan đến hoạt động bán thực phẩm)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_financial:label">
+            <value>Đã có bất kỳ tổn thất tài chính nào không và nếu có, doanh nghiệp, cửa hàng ăn của bạn đã phục hồi tài chính sau sự kiện Bão này chưa?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_damages:label">
+            <value>Đã có bất kỳ thiệt hại vật chất nào không và nếu có, doanh nghiệp của bạn đã phục hồi về vật chất của cải sau trận Bão này chưa?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste:label">
+            <value>Quản lý chất thải thực phẩm</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_amount:label">
+            <value>Khoảng bao nhiêu thực phẩm doanh nghiệp của bạn thải ra mỗi ngày/tuần/tháng?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_amount_unit:label">
+            <value>Lượng thực phẩm đó được thải ra mỗi:</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_freq:label">
+            <value>Doanh nghiệp của bạn thải bỏ thực phẩm thường xuyên như thế nào?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_mainreason:label">
+            <value>Những lý do chính khiến doanh nghiệp của bạn cần thải bỏ thực phẩm là gì?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_whatdo:label">
+            <value>Bạn thường làm gì với lượng thực phẩm bị thải bỏ?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/debriefing:label">
+            <value>Tóm tắt</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/debriefing/Xin_ch_n_th_nh_c_m_m_t_ng_y_th_t_vui_v:label">
+            <value>Xin chân thành cảm ơn sự hợp tác của bạn. Những câu trả lời ẩn danh của bạn sẽ rất quan trọng đối với nghiên cứu khoa học và việc học của tôi tại VNU &amp; KU Leuven (Bỉ). Nếu bạn có bất kỳ câu hỏi nào, bạn luôn có thể gửi email đến: [LIÊN HỆ ĐỊA PHƯƠNG]. Nếu bạn muốn nhận kết quả nghiên cứu này, chúng tôi vui lòng yêu cầu bạn cung cấp địa chỉ email của mình (chúng tôi sẽ ghi lại địa chỉ này trong một tài liệu riêng biệt với nghiên cứu này). Bạn có thể quyết định rút khỏi sự tham gia của mình trong vòng một tháng sau cuộc phỏng vấn này. Chúng tôi xin kết thúc cuộc khảo sát này, chúc bạn một ngày thật vui vẻ.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/end_001:label">
+            <value>KẾT THÚC</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/end_001/_y_l_ph_n_k_t_th_c_c_k_t_n_i_internet:label">
+            <value>Đây là phần kết thúc của cuộc khảo sát. Kết thúc cuộc trò chuyện. Đảm bảo rằng bạn LƯU cuộc khảo sát sau đó và chuyển tiếp khi có kết nối internet.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/end_001/picture:label">
+            <value>ẢNH: Nếu người trả lời đồng ý, hãy chụp ảnh bên ngoài doanh nghiệp, tốt nhất là KHÔNG có người trả lời trong ảnh, trừ khi người trả lời yêu cầu cụ thể.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/comments:label">
+            <value>Bạn là NGƯỜI KHẢO SÁT có ghi chú cuối cùng nào về cuộc khảo sát này không? Có gì thú vị không, có gì lạ không? Nếu KHÔNG ghi được vị trí nào, hãy nhập địa chỉ/tọa độ ở đây.</value>
+          </text>
+        </translation>
+        <translation lang="English (en)">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="surveyors-0">
+            <value>Analyn</value>
+          </text>
+          <text id="surveyors-1">
+            <value>Angel</value>
+          </text>
+          <text id="surveyors-2">
+            <value>Emerson</value>
+          </text>
+          <text id="surveyors-3">
+            <value>Duy</value>
+          </text>
+          <text id="surveyors-4">
+            <value>Hanh</value>
+          </text>
+          <text id="surveyors-5">
+            <value>Mai Linh</value>
+          </text>
+          <text id="surveyors-6">
+            <value>Ha</value>
+          </text>
+          <text id="surveyors-7">
+            <value>Volunteer</value>
+          </text>
+          <text id="surveyors-8">
+            <value>Lisa-Marie</value>
+          </text>
+          <text id="vendortype-0">
+            <value>Supermarket</value>
+          </text>
+          <text id="vendortype-1">
+            <value>Market stallholder, seller at a fresh produce market</value>
+          </text>
+          <text id="vendortype-2">
+            <value>Wholesaler</value>
+          </text>
+          <text id="vendortype-3">
+            <value>Street vendor with fresh food (e.g. vegetables/fruit/meat)</value>
+          </text>
+          <text id="vendortype-4">
+            <value>Retailer (bakery, butcher, specialty store, etc.)</value>
+          </text>
+          <text id="vendortype-5">
+            <value>Restaurant (dine-in)</value>
+          </text>
+          <text id="vendortype-6">
+            <value>Food truck / take-out street vendor that sells prepared meals or snacks</value>
+          </text>
+          <text id="gender-0">
+            <value>Man</value>
+          </text>
+          <text id="gender-1">
+            <value>Woman</value>
+          </text>
+          <text id="gender-2">
+            <value>X (Non-binary, Nonconforming, Fluid, prefer not to say)</value>
+          </text>
+          <text id="refuse_reasons-0">
+            <value>They are not home.</value>
+          </text>
+          <text id="refuse_reasons-1">
+            <value>The person who makes the decisions about food is not at home.</value>
+          </text>
+          <text id="refuse_reasons-2">
+            <value>They are probably home but did not open the door.</value>
+          </text>
+          <text id="refuse_reasons-3">
+            <value>No reason given.</value>
+          </text>
+          <text id="refuse_reasons-4">
+            <value>They are not comfortable answering these survey questions.</value>
+          </text>
+          <text id="refuse_reasons-5">
+            <value>They don't have time.</value>
+          </text>
+          <text id="refuse_reasons-6">
+            <value>Other</value>
+          </text>
+          <text id="importancescale-0">
+            <value>Not important / not taken into account</value>
+          </text>
+          <text id="importancescale-1">
+            <value>Average / Neutral</value>
+          </text>
+          <text id="importancescale-2">
+            <value>Very important / priority</value>
+          </text>
+          <text id="transporttype-0">
+            <value>Is at home</value>
+          </text>
+          <text id="transporttype-1">
+            <value>On foot</value>
+          </text>
+          <text id="transporttype-2">
+            <value>By bike</value>
+          </text>
+          <text id="transporttype-3">
+            <value>With a scooter or motorcycle</value>
+          </text>
+          <text id="transporttype-4">
+            <value>Bus/public transport</value>
+          </text>
+          <text id="transporttype-5">
+            <value>I'm lifting with someone/someone is dropping me off</value>
+          </text>
+          <text id="transporttype-6">
+            <value>Taxi</value>
+          </text>
+          <text id="transporttype-7">
+            <value>Own car or minivan</value>
+          </text>
+          <text id="transporttype-8">
+            <value>Commercial vehicle</value>
+          </text>
+          <text id="roadtype-0">
+            <value>Asphalted</value>
+          </text>
+          <text id="roadtype-1">
+            <value>Sand/dirt road</value>
+          </text>
+          <text id="whole_processed-0">
+            <value>Mostly unprocessed/"whole" foods</value>
+          </text>
+          <text id="whole_processed-1">
+            <value>Mainly processed/prepared foods (meals, side dishes, snacks, sauces…)</value>
+          </text>
+          <text id="tenurestatus-0">
+            <value>Owner</value>
+          </text>
+          <text id="tenurestatus-1">
+            <value>Tenant</value>
+          </text>
+          <text id="tenurestatus-2">
+            <value>Cracker/caretaker</value>
+          </text>
+          <text id="cookingsource-0">
+            <value>Electricity</value>
+          </text>
+          <text id="cookingsource-1">
+            <value>Gas</value>
+          </text>
+          <text id="cookingsource-2">
+            <value>Biogas</value>
+          </text>
+          <text id="cookingsource-3">
+            <value>Solar energy</value>
+          </text>
+          <text id="cookingsource-4">
+            <value>Charcoal</value>
+          </text>
+          <text id="cookingsource-5">
+            <value>Wood</value>
+          </text>
+          <text id="cookingsource-6">
+            <value>Paraffin</value>
+          </text>
+          <text id="utilities-0">
+            <value>Internet (cable/wifi installed in house)</value>
+          </text>
+          <text id="utilities-1">
+            <value>Smartphone or tablet with internet access</value>
+          </text>
+          <text id="utilities-2">
+            <value>Television</value>
+          </text>
+          <text id="utilities-3">
+            <value>Air conditioning</value>
+          </text>
+          <text id="utilities-4">
+            <value>Computer (PC/laptop/desktop)</value>
+          </text>
+          <text id="agreescale-0">
+            <value>Disagree (completely/strongly disagree)</value>
+          </text>
+          <text id="agreescale-1">
+            <value>Slightly disagree</value>
+          </text>
+          <text id="agreescale-2">
+            <value>Neutral (as elsewhere/don't care/no idea)</value>
+          </text>
+          <text id="agreescale-3">
+            <value>Somewhat agree</value>
+          </text>
+          <text id="agreescale-4">
+            <value>Agree (completely/strongly/completely agree)</value>
+          </text>
+          <text id="foodgroups-0">
+            <value>GRAINS (corn, rice, wheat, bread, noodles, porridge, pasta, etc…)</value>
+          </text>
+          <text id="foodgroups-1">
+            <value>WHITE ROOTS AND TUBERS (potatoes, white sweet potato, white cassava, kwak, Chinese tayer … or other roots)</value>
+          </text>
+          <text id="foodgroups-2">
+            <value>VEGETABLES AND TUBERS WITH VITAMIN A (pumpkin, carrot, orange sweet potato, bell pepper (anything orange inside))</value>
+          </text>
+          <text id="foodgroups-3">
+            <value>DARK GREEN LEAFY VEGETABLES (claroen, cassava leaves, spinach, amsoi, pak choi, cabbage, bitawiri all leaves…)</value>
+          </text>
+          <text id="foodgroups-4">
+            <value>OTHER VEGETABLES (tomato, onion, eggplant/boulangerie, poe, sopropo, antroea, soekwa, okra, broccoli…)</value>
+          </text>
+          <text id="foodgroups-5">
+            <value>FRUIT WITH VITAMIN A (mango, melon, papaya, watermelon, passion fruit/makoesa, grapefruit, sapotilla or 100% juices thereof)</value>
+          </text>
+          <text id="foodgroups-6">
+            <value>OTHER FRUIT (banana/baking, orange, acai, berries, cherries, dragon fruit, lychee/rambutang, apple, pomeranian, lime ... or 100% juices of these)</value>
+          </text>
+          <text id="foodgroups-7">
+            <value>ORGAN MEATS (liver, kidney, heart or other organ meats or blood based foods)</value>
+          </text>
+          <text id="foodgroups-8">
+            <value>OTHER MEAT (beef, pork, lamb, goat, rabbit, game, chicken, insects...)</value>
+          </text>
+          <text id="foodgroups-9">
+            <value>EGGS (chicken, duck or other)</value>
+          </text>
+          <text id="foodgroups-10">
+            <value>FISH AND SEAFOOD (fresh or dried fish or shellfish)</value>
+          </text>
+          <text id="foodgroups-11">
+            <value>LEGUMES, NUTS AND SEEDS (beans, runner beans, peas, lentils, sim, nuts, seeds, peanuts or foods made from these)</value>
+          </text>
+          <text id="foodgroups-12">
+            <value>MILK AND DAIRY PRODUCTS (milk, cheese, yoghurt or other)</value>
+          </text>
+          <text id="foodgroups-13">
+            <value>OILS AND FATS (oil, fats or butter added to food or used for cooking)</value>
+          </text>
+          <text id="foodgroups-14">
+            <value>SWEETS (sugar, honey, sweetened soft drinks or sweetened fruit juices, sugary foods such as chocolate, candy, cookies and cake)</value>
+          </text>
+          <text id="foodgroups-15">
+            <value>HERBS, SAUCES, DRINKS (spices, pepper, salt, soy sauce, hot sauce, coffee, tea, alcoholic beverages)</value>
+          </text>
+          <text id="foodenvlocation-0">
+            <value>Here (food sold to home/home with business)</value>
+          </text>
+          <text id="foodenvlocation-1">
+            <value>In this street</value>
+          </text>
+          <text id="foodenvlocation-2">
+            <value>In this residential area</value>
+          </text>
+          <text id="foodenvlocation-3">
+            <value>In this commune</value>
+          </text>
+          <text id="foodenvlocation-4">
+            <value>Elsewhere in Long Bien district</value>
+          </text>
+          <text id="foodenvlocation-5">
+            <value>In the city center (Hanoi)</value>
+          </text>
+          <text id="foodenvlocation-6">
+            <value>Elsewhere in Vietnam</value>
+          </text>
+          <text id="foodenvlocation-7">
+            <value>Abroad (e.g. French Guiana)</value>
+          </text>
+          <text id="foodenvreason-0">
+            <value>I know this supplier/source personally (trust)</value>
+          </text>
+          <text id="foodenvreason-1">
+            <value>They are the cheapest</value>
+          </text>
+          <text id="foodenvreason-2">
+            <value>It's close</value>
+          </text>
+          <text id="foodenvreason-3">
+            <value>They have healthy options</value>
+          </text>
+          <text id="foodenvreason-4">
+            <value>They have good quality products</value>
+          </text>
+          <text id="foodenvreason-5">
+            <value>They offer a large and/or unique range</value>
+          </text>
+          <text id="receivegive-0">
+            <value>Yes, we sometimes receive food (e.g. from family, neighbors, friends, church, school, …)</value>
+          </text>
+          <text id="receivegive-1">
+            <value>Yes, we sometimes give away food (e.g. to family, neighbors, friends, church, school, …)</value>
+          </text>
+          <text id="receivegive-2">
+            <value>No, we do not share food and do not receive food from anyone</value>
+          </text>
+          <text id="dayweek-0">
+            <value>Day</value>
+          </text>
+          <text id="dayweek-1">
+            <value>Week</value>
+          </text>
+          <text id="frequency-0">
+            <value>twice or more per day</value>
+          </text>
+          <text id="frequency-1">
+            <value>once every day</value>
+          </text>
+          <text id="frequency-2">
+            <value>a few times a week</value>
+          </text>
+          <text id="frequency-3">
+            <value>a few times a month</value>
+          </text>
+          <text id="frequency-4">
+            <value>a few times a year</value>
+          </text>
+          <text id="frequency-5">
+            <value>rarely</value>
+          </text>
+          <text id="frequency-6">
+            <value>do not know</value>
+          </text>
+          <text id="previouslocation-0">
+            <value>This is the first place I ever sold food, I never sold food anywhere else.</value>
+          </text>
+          <text id="previouslocation-1">
+            <value>In another part of Long Bien</value>
+          </text>
+          <text id="previouslocation-2">
+            <value>In Hanoi</value>
+          </text>
+          <text id="previouslocation-3">
+            <value>In another part of the country, outside Hanoi/Long Bien</value>
+          </text>
+          <text id="previouslocation-4">
+            <value>Before this I sold food abroad</value>
+          </text>
+          <text id="ethnicity-0">
+            <value>Kinh</value>
+          </text>
+          <text id="ethnicity-1">
+            <value>Muong</value>
+          </text>
+          <text id="ethnicity-2">
+            <value>Tay</value>
+          </text>
+          <text id="ethnicity-3">
+            <value>Thai</value>
+          </text>
+          <text id="ethnicity-4">
+            <value>Mixed</value>
+          </text>
+          <text id="ethnicity-5">
+            <value>Other</value>
+          </text>
+          <text id="ethnicity-6">
+            <value>I don't know</value>
+          </text>
+          <text id="longbien_neighbourhoods-0">
+            <value>An Lac</value>
+          </text>
+          <text id="longbien_neighbourhoods-1">
+            <value>Doc Lap</value>
+          </text>
+          <text id="longbien_neighbourhoods-2">
+            <value>Dong Du Ha</value>
+          </text>
+          <text id="longbien_neighbourhoods-3">
+            <value>Duc Giang</value>
+          </text>
+          <text id="longbien_neighbourhoods-4">
+            <value>Khu Tap The 918</value>
+          </text>
+          <text id="longbien_neighbourhoods-5">
+            <value>Lang Tram</value>
+          </text>
+          <text id="longbien_neighbourhoods-6">
+            <value>Lam Du/Bo De</value>
+          </text>
+          <text id="longbien_neighbourhoods-7">
+            <value>Pho Le Mat</value>
+          </text>
+          <text id="longbien_neighbourhoods-8">
+            <value>Phuc Loi</value>
+          </text>
+          <text id="longbien_neighbourhoods-9">
+            <value>Sai Dong</value>
+          </text>
+          <text id="longbien_neighbourhoods-10">
+            <value>Thach Ban</value>
+          </text>
+          <text id="longbien_neighbourhoods-11">
+            <value>Thach Cau (East)</value>
+          </text>
+          <text id="longbien_neighbourhoods-12">
+            <value>Thach Cau (West)</value>
+          </text>
+          <text id="longbien_neighbourhoods-13">
+            <value>Thong Nhat</value>
+          </text>
+          <text id="longbien_neighbourhoods-14">
+            <value>Thôn Ngô</value>
+          </text>
+          <text id="longbien_neighbourhoods-15">
+            <value>Thôn Vàng</value>
+          </text>
+          <text id="longbien_neighbourhoods-16">
+            <value>Thuong Hoi</value>
+          </text>
+          <text id="longbien_neighbourhoods-17">
+            <value>Tu Dinh</value>
+          </text>
+          <text id="longbien_neighbourhoods-18">
+            <value>Viet Hung</value>
+          </text>
+          <text id="longbien_neighbourhoods-19">
+            <value>Vinhomes Riverside</value>
+          </text>
+          <text id="longbien_neighbourhoods-20">
+            <value>Xom Bai</value>
+          </text>
+          <text id="longbien_neighbourhoods-21">
+            <value>Xom Le</value>
+          </text>
+          <text id="longbien_neighbourhoods-22">
+            <value>Xuan Do Ha</value>
+          </text>
+          <text id="longbien_neighbourhoods-23">
+            <value>Elsewhere in Long Bien</value>
+          </text>
+          <text id="typh_prepare-0">
+            <value>Stockpiling Essentials: purchase and store extra food supplies, especially non-perishable goods like rice, dried noodles, and canned products.</value>
+          </text>
+          <text id="typh_prepare-1">
+            <value>Securing Inventory: Safeguarding (perishable) items by storing them in protected places within this shop.</value>
+          </text>
+          <text id="typh_prepare-2">
+            <value>Securing Inventory: Safeguarding (perishable) items by moving them to safer locations away from flood-prone zones.</value>
+          </text>
+          <text id="typh_prepare-3">
+            <value>Adjusting Business Hours: Temporarily closing before the typhoon's arrival or operating shorter hours to ensure safety.</value>
+          </text>
+          <text id="typh_prepare-4">
+            <value>Relocating operations to safer locations</value>
+          </text>
+          <text id="typh_prepare-5">
+            <value>Strengthening/reinforcing infrastructure to withstand strong winds and heavy rain (using tarps, sandbags, wood, or other stabilizing materials)</value>
+          </text>
+          <text id="typh_prepare-6">
+            <value>Diversifying Product Offering: by focusing on items that are readily available and easy to stock or transport post-typhoon.</value>
+          </text>
+          <text id="typh_prepare-7">
+            <value>Collaborating with Local Suppliers: Building relationships with local farmers and suppliers who may be more accessible after the typhoon</value>
+          </text>
+          <text id="typh_prepare-8">
+            <value>Saving Cash for Emergencies: Keeping cash reserves to cover operational or supply costs</value>
+          </text>
+          <text id="typh_prepare-9">
+            <value>Communicating with Customers: Informing regular customers about temporary changes in operations via social media, messaging apps, or word of mouth.</value>
+          </text>
+          <text id="typh_prepare-10">
+            <value>Contingency Planning for Power Outages: backup solutions such as generators or ice boxes to keep perishable food fresh if electricity is disrupted.</value>
+          </text>
+          <text id="typh_cope-0">
+            <value>Close shop/stall until all wind/flooding completely stopped (multiple days closed)</value>
+          </text>
+          <text id="typh_cope-1">
+            <value>Close shop/stall until typhoon completely stopped, but remained open during floods (one day closed)</value>
+          </text>
+          <text id="typh_cope-2">
+            <value>Stay inside (at home, not attached or close to this shop)</value>
+          </text>
+          <text id="typh_cope-3">
+            <value>Stay inside (at home, here)</value>
+          </text>
+          <text id="typh_cope-4">
+            <value>Make food cheaper to attract more clients.</value>
+          </text>
+          <text id="typh_cope-5">
+            <value>Make food more expensive, out of necessity or becausepeople are willing to pay more after a typhoon.</value>
+          </text>
+          <text id="typh_cope-6">
+            <value>Share/exchange food with other vendors</value>
+          </text>
+          <text id="typh_financial-0">
+            <value>Severe financial losses, not recovered</value>
+          </text>
+          <text id="typh_financial-1">
+            <value>Severe financial losses, partly recovered</value>
+          </text>
+          <text id="typh_financial-2">
+            <value>Severe financial losses, fully recovered</value>
+          </text>
+          <text id="typh_financial-3">
+            <value>Moderate financial losses, not recovered</value>
+          </text>
+          <text id="typh_financial-4">
+            <value>Moderate financial losses, party recovered</value>
+          </text>
+          <text id="typh_financial-5">
+            <value>Moderate financial losses, fully recovered</value>
+          </text>
+          <text id="typh_financial-6">
+            <value>No financial losses at all</value>
+          </text>
+          <text id="typh_financial-7">
+            <value>Better financial situation than before</value>
+          </text>
+          <text id="typh_damages-0">
+            <value>Severe physical damages, not recovered</value>
+          </text>
+          <text id="typh_damages-1">
+            <value>Severe physical damages, partly recovered</value>
+          </text>
+          <text id="typh_damages-2">
+            <value>Severe physical damages, fully recovered</value>
+          </text>
+          <text id="typh_damages-3">
+            <value>Moderate physical damages, not recovered</value>
+          </text>
+          <text id="typh_damages-4">
+            <value>Moderate physical damages, party recovered</value>
+          </text>
+          <text id="typh_damages-5">
+            <value>Moderate physical damages, fully recovered</value>
+          </text>
+          <text id="typh_damages-6">
+            <value>No physical damages at all</value>
+          </text>
+          <text id="wastequantities-0">
+            <value>None</value>
+          </text>
+          <text id="wastequantities-1">
+            <value>Less than 100 g</value>
+          </text>
+          <text id="wastequantities-2">
+            <value>Less than 500 g</value>
+          </text>
+          <text id="wastequantities-3">
+            <value>Less than 1 kg</value>
+          </text>
+          <text id="wastequantities-4">
+            <value>Less than 3 kg</value>
+          </text>
+          <text id="wastequantities-5">
+            <value>Less than 5 kg</value>
+          </text>
+          <text id="wastequantities-6">
+            <value>More than 5 kg</value>
+          </text>
+          <text id="wastereasons-0">
+            <value>Quality went bad (deteriorated)</value>
+          </text>
+          <text id="wastereasons-1">
+            <value>Passed 'use-by' date</value>
+          </text>
+          <text id="wastereasons-2">
+            <value>Unappetizing, did not like the taste or dissatisfied with the food after a few bites</value>
+          </text>
+          <text id="wastereasons-3">
+            <value>I made or ordered too much food</value>
+          </text>
+          <text id="wastereasons-4">
+            <value>I had too many ingredients to cook that I did not use</value>
+          </text>
+          <text id="wastereasons-5">
+            <value>Other</value>
+          </text>
+          <text id="wasteuses-0">
+            <value>Throw it away (in the bin)</value>
+          </text>
+          <text id="wasteuses-1">
+            <value>Give it to neighbours, friends or family</value>
+          </text>
+          <text id="wasteuses-2">
+            <value>Bring it to food bank</value>
+          </text>
+          <text id="wasteuses-3">
+            <value>Community composting</value>
+          </text>
+          <text id="wasteuses-4">
+            <value>Household composting</value>
+          </text>
+          <text id="wasteuses-5">
+            <value>Use it as animal food</value>
+          </text>
+          <text id="wasteuses-6">
+            <value>Other</value>
+          </text>
+          <text id="dayweekmonth-0">
+            <value>Day</value>
+          </text>
+          <text id="dayweekmonth-1">
+            <value>Week</value>
+          </text>
+          <text id="dayweekmonth-2">
+            <value>Month</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general:label">
+            <value>General</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/location:label">
+            <value>IMPORTANT: Please record the GPS LOCATION for this survey before you knock.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/surveyorname:label">
+            <value>Who is the surveyor?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/vendortype:label">
+            <value>Type of food vendor?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/GI_I_THI_U_Xin_ch_o_l_i_n_i_c_a_b_n_ch_a:label">
+            <value> INTRODUCTION: Hello, my name is <output value=" /aXPD7SjcAqN7pmqJe3mFbA/general/surveyorname "/> and I am a student at the University of… We are conducting surveys to investigate the food system in Long Bien. We would like to ask you a few questions about your business, the neighborhood, and why you sell food there. We expect this survey to take about 10 minutes of your time. You can choose not to answer one or more questions. Of course, you can also choose to stop the interview at any time. There are no right or wrong answers. This interview is anonymous: we will not ask for your name. We will not share your personal data and this data will be processed mainly at KU Leuven in Belgium. We want to gain a better understanding of the food system: who eats what type of food in Long Bien? Where is this food obtained, nearby or somewhere else? These are our questions for academic research purposes. The survey is conducted digitally. I can also provide you with an extensive information sheet on paper if you wish. Do I have your verbal informed consent? </value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/verbalconsent:label">
+            <value>The respondent gives consent and understands the purpose of the study. Do NOT proceed without consent.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/Kh_ng_c_ph_p_D_ng_a_ra_l_do_t_ch_i:label">
+            <value>No permission. Stop the survey immediately. Note the reason afterwards if relevant.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/refusalreason:label">
+            <value>Reason for refusal:</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/general/neighborhood:label">
+            <value>Ask the respondent: What is the name of this neighborhood where you sell food?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/vendor:label">
+            <value>Vendor characteristics and location</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_gender:label">
+            <value>Gender of the respondent/seller</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/vendor/age:label">
+            <value>What is your age?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_owner:label">
+            <value>Is the respondent the owner/main operator of this business?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/vendor/staff:label">
+            <value>How many people work here (including yourself)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_ethn:label">
+            <value>What is your ethnicity?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity:label">
+            <value>What types of food are sold here?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity/foodgroups:label">
+            <value>Describe the food products (meals and snacks) you sell at this location.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity/wholeorprocessed:label">
+            <value>Surveyor: Do you see mostly unprocessed foods (eg whole vegetables, fruits, meat, etc.) or mostly prepared/processed foods (meals, snacks, sauces, etc.)?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/location_001:label">
+            <value>Vendor location</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/location_001/locationtime:label">
+            <value>How many years have you been active as a food vendor AT THIS LOCATION (specifically here)?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/location_001/previouslocation:label">
+            <value>Is this your first location selling food? If not, WHERE have you sold food before?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/location_001/previouslocationNUA:label">
+            <value>In which neighborhood in Long Bien were you previously active as a food vendor?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/location_001/homelocation:label">
+            <value>In which region do you live?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/location_001/reason:label">
+            <value>What was the main reason you started selling food/starting a business here in this location?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors:label">
+            <value> Think back to when you first started your business here, in <output value=" /aXPD7SjcAqN7pmqJe3mFbA/location_001/locationtime "/>. How important were the following factors to you in selling food at this location? </value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/bridge_city:label">
+            <value>Distance to the BRUG (the city centre).</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/customers_neighb:label">
+            <value>Many customers live in this area.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/customers_passersby:label">
+            <value>Many customers PASS this street, for example because they are on their way to work/home, or work nearby.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/supplychain:label">
+            <value>Distance to suppliers/wholesalers.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/safe_reputation:label">
+            <value> When you decided to sell here, in <output value=" /aXPD7SjcAqN7pmqJe3mFbA/location_001/locationtime "/>, how important was to you: the SAFETY of the neighborhood/good reputation </value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/flooding:label">
+            <value>The sensitivity of this location to FLOODS</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/infrastructure:label">
+            <value>General INFRASTRUCTURE (electricity, gas, paved road, etc.)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/presence:label">
+            <value>PRESENCE of other food vendors (e.g. if there was already a market here and you could join)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/absence:label">
+            <value>ABSENCE of other food vendors (lack of supply in this area/gap in the market/wanted to be the only one)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/schools:label">
+            <value> Think back to <output value=" /aXPD7SjcAqN7pmqJe3mFbA/location_001/locationtime "/>, when you decided to come and sell here. How important was the: distance to SCHOOLS </value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/leisure:label">
+            <value>Distance to RECREATION (sports, music, parks…)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements:label">
+            <value>Statements_vendor</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/B_n_ng_hay_kh_ng_h_ng_tuy_n_b_sau_y:label">
+            <value>Do you agree or disagree (or are neutral) with respect to the following statements?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/customers_wealth:label">
+            <value>The customers who buy food from me are almost all wealthy/rich.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/customers_ethn:label">
+            <value>The customers who buy food from me mainly come from one particular/specific ethnic group.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/rathersomewhereelse:label">
+            <value>I would rather sell food elsewhere (anywhere else), but this is the best location I can afford/can afford.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/ratherothersector:label">
+            <value>I would rather run another business, but selling food is the only realistic/profitable venture for me at this time.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/_5yr_changesector:label">
+            <value>I plan to stop selling food in the next five years.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/statements/_5yr_changelocation:label">
+            <value>I plan to continue selling food for the next five years, but will change my location.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/typhoon:label">
+            <value>Typhoon_Yagi</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/B_y_gi_h_y_ngh_n_ng_g_n_y_nh_t_Yagi:label">
+            <value>Now, please think of the most recent serious Typhoon event (Yagi).</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_prepare:label">
+            <value>Which of the following activities did you undertake in the days leading up to the Typhoon, to prepare? (related to food-selling activities)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_cope:label">
+            <value>Which of the following activities did you undertake in during the Typhoon and subsequent flooding, to cope? (related to food-selling activities)</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_financial:label">
+            <value>Have there been any financial losses, and if so, has your business financially recovered from this Typhoon event?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_damages:label">
+            <value>Have there been any physical damages, and if so, has your business physically recovered from this Typhoon event?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste:label">
+            <value>Food waste management</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_amount:label">
+            <value>Approximately, how much food does your business discard per day/week/month?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_amount_unit:label">
+            <value>That amount is discarded per:</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_freq:label">
+            <value>How often does your business discard food?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_mainreason:label">
+            <value>What are the main reasons your business needs to discard food?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_whatdo:label">
+            <value>What do you usually do with the food that is discarded?</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/debriefing:label">
+            <value>Debriefing</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/debriefing/Xin_ch_n_th_nh_c_m_m_t_ng_y_th_t_vui_v:label">
+            <value>Thank you very much for your cooperation. Your anonymous answers will be important for scientific research and my studies at VNU &amp; KU Leuven (Belgium). If you have any questions, you can always send an e-mail to: [LOCAL CONTACT]. If you wish to receive the results of this research, we kindly request you to provide your e-mail address (we will record this in a document separate from this research). You can decide to withdraw your participation up to one month after this interview. Hereby we end the survey, we wish you a very pleasant day.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/end_001:label">
+            <value>END</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/end_001/_y_l_ph_n_k_t_th_c_c_k_t_n_i_internet:label">
+            <value>This is the end of the survey. Wrap up the conversation. Make sure you SAVE the survey later and forward it once there is an internet connection.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/end_001/picture:label">
+            <value>PHOTO: If the respondent agrees, take a photo of the outside of the business, preferably WITHOUT the respondent in it, unless the respondent specifically requests this.</value>
+          </text>
+          <text id="/aXPD7SjcAqN7pmqJe3mFbA/comments:label">
+            <value>Do you as a SURVEYOR have any final notes about this survey? Anything interesting, anything strange? If NO location could be recorded, type the address/coordinates here.</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <aXPD7SjcAqN7pmqJe3mFbA id="Ven_LongBien_FW">
+          <Time/>
+          <end/>
+          <deviceid/>
+          <general>
+            <location/>
+            <surveyorname/>
+            <vendortype/>
+            <GI_I_THI_U_Xin_ch_o_l_i_n_i_c_a_b_n_ch_a/>
+            <verbalconsent/>
+            <Kh_ng_c_ph_p_D_ng_a_ra_l_do_t_ch_i/>
+            <refusalreason/>
+            <refusalreason_other/>
+            <neighborhood/>
+          </general>
+          <vendor>
+            <resp_gender/>
+            <age/>
+            <resp_owner/>
+            <staff/>
+            <resp_ethn/>
+            <resp_ethn_other/>
+          </vendor>
+          <fooddiversity>
+            <foodgroups/>
+            <wholeorprocessed/>
+          </fooddiversity>
+          <location_001>
+            <locationtime/>
+            <previouslocation/>
+            <previouslocationNUA/>
+            <homelocation/>
+            <reason/>
+          </location_001>
+          <movefactors>
+            <bridge_city/>
+            <customers_neighb/>
+            <customers_passersby/>
+            <supplychain/>
+            <safe_reputation/>
+            <flooding/>
+            <infrastructure/>
+            <presence/>
+            <absence/>
+            <schools/>
+            <leisure/>
+          </movefactors>
+          <statements>
+            <B_n_ng_hay_kh_ng_h_ng_tuy_n_b_sau_y/>
+            <customers_wealth/>
+            <customers_ethn/>
+            <rathersomewhereelse/>
+            <ratherothersector/>
+            <_5yr_changesector/>
+            <_5yr_changelocation/>
+          </statements>
+          <typhoon>
+            <B_y_gi_h_y_ngh_n_ng_g_n_y_nh_t_Yagi/>
+            <typhoon_prepare/>
+            <typhoon_cope/>
+            <typhoon_financial/>
+            <typhoon_damages/>
+          </typhoon>
+          <foodwaste>
+            <foodwaste_amount/>
+            <foodwaste_amount_unit/>
+            <foodwaste_freq/>
+            <foodwaste_mainreason/>
+            <foodwaste_whatdo/>
+          </foodwaste>
+          <debriefing>
+            <Xin_ch_n_th_nh_c_m_m_t_ng_y_th_t_vui_v/>
+          </debriefing>
+          <end_001>
+            <_y_l_ph_n_k_t_th_c_c_k_t_n_i_internet/>
+            <picture/>
+          </end_001>
+          <comments/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </aXPD7SjcAqN7pmqJe3mFbA>
+      </instance>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>now</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="surveyors">
+        <root>
+          <item>
+            <itextId>surveyors-0</itextId>
+            <name>analyn</name>
+          </item>
+          <item>
+            <itextId>surveyors-1</itextId>
+            <name>angel</name>
+          </item>
+          <item>
+            <itextId>surveyors-2</itextId>
+            <name>emerson</name>
+          </item>
+          <item>
+            <itextId>surveyors-3</itextId>
+            <name>duy</name>
+          </item>
+          <item>
+            <itextId>surveyors-4</itextId>
+            <name>hanh</name>
+          </item>
+          <item>
+            <itextId>surveyors-5</itextId>
+            <name>mailinh</name>
+          </item>
+          <item>
+            <itextId>surveyors-6</itextId>
+            <name>ha</name>
+          </item>
+          <item>
+            <itextId>surveyors-7</itextId>
+            <name>volunteer</name>
+          </item>
+          <item>
+            <itextId>surveyors-8</itextId>
+            <name>lisamarie</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="vendortype">
+        <root>
+          <item>
+            <itextId>vendortype-0</itextId>
+            <name>supermarket</name>
+          </item>
+          <item>
+            <itextId>vendortype-1</itextId>
+            <name>marketvendor</name>
+          </item>
+          <item>
+            <itextId>vendortype-2</itextId>
+            <name>wholesaler</name>
+          </item>
+          <item>
+            <itextId>vendortype-3</itextId>
+            <name>street vendor</name>
+          </item>
+          <item>
+            <itextId>vendortype-4</itextId>
+            <name>retailer</name>
+          </item>
+          <item>
+            <itextId>vendortype-5</itextId>
+            <name>restaurant</name>
+          </item>
+          <item>
+            <itextId>vendortype-6</itextId>
+            <name>food truck</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="gender">
+        <root>
+          <item>
+            <itextId>gender-0</itextId>
+            <name>male</name>
+          </item>
+          <item>
+            <itextId>gender-1</itextId>
+            <name>female</name>
+          </item>
+          <item>
+            <itextId>gender-2</itextId>
+            <name>X</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="refuse_reasons">
+        <root>
+          <item>
+            <itextId>refuse_reasons-0</itextId>
+            <name>not_home</name>
+          </item>
+          <item>
+            <itextId>refuse_reasons-1</itextId>
+            <name>responsible_not_home</name>
+          </item>
+          <item>
+            <itextId>refuse_reasons-2</itextId>
+            <name>no_response</name>
+          </item>
+          <item>
+            <itextId>refuse_reasons-3</itextId>
+            <name>undisclosed</name>
+          </item>
+          <item>
+            <itextId>refuse_reasons-4</itextId>
+            <name>uncomfortable</name>
+          </item>
+          <item>
+            <itextId>refuse_reasons-5</itextId>
+            <name>no_time</name>
+          </item>
+          <item>
+            <itextId>refuse_reasons-6</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="importancescale">
+        <root>
+          <item>
+            <itextId>importancescale-0</itextId>
+            <name>-1</name>
+          </item>
+          <item>
+            <itextId>importancescale-1</itextId>
+            <name>0</name>
+          </item>
+          <item>
+            <itextId>importancescale-2</itextId>
+            <name>1</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="transporttype">
+        <root>
+          <item>
+            <itextId>transporttype-0</itextId>
+            <name>home</name>
+          </item>
+          <item>
+            <itextId>transporttype-1</itextId>
+            <name>walking</name>
+          </item>
+          <item>
+            <itextId>transporttype-2</itextId>
+            <name>bycicle</name>
+          </item>
+          <item>
+            <itextId>transporttype-3</itextId>
+            <name>motorcycle</name>
+          </item>
+          <item>
+            <itextId>transporttype-4</itextId>
+            <name>public transport</name>
+          </item>
+          <item>
+            <itextId>transporttype-5</itextId>
+            <name>elevator</name>
+          </item>
+          <item>
+            <itextId>transporttype-6</itextId>
+            <name>Taxi</name>
+          </item>
+          <item>
+            <itextId>transporttype-7</itextId>
+            <name>car_van</name>
+          </item>
+          <item>
+            <itextId>transporttype-8</itextId>
+            <name>company vehicle</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="roadtype">
+        <root>
+          <item>
+            <itextId>roadtype-0</itextId>
+            <name>tarmacked</name>
+          </item>
+          <item>
+            <itextId>roadtype-1</itextId>
+            <name>untarmacked</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="whole_processed">
+        <root>
+          <item>
+            <itextId>whole_processed-0</itextId>
+            <name>whole</name>
+          </item>
+          <item>
+            <itextId>whole_processed-1</itextId>
+            <name>processed</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="tenurestatus">
+        <root>
+          <item>
+            <itextId>tenurestatus-0</itextId>
+            <name>owner</name>
+          </item>
+          <item>
+            <itextId>tenurestatus-1</itextId>
+            <name>renter</name>
+          </item>
+          <item>
+            <itextId>tenurestatus-2</itextId>
+            <name>squatter</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="cookingsource">
+        <root>
+          <item>
+            <itextId>cookingsource-0</itextId>
+            <name>electricity</name>
+          </item>
+          <item>
+            <itextId>cookingsource-1</itextId>
+            <name>gas</name>
+          </item>
+          <item>
+            <itextId>cookingsource-2</itextId>
+            <name>biogas</name>
+          </item>
+          <item>
+            <itextId>cookingsource-3</itextId>
+            <name>solar</name>
+          </item>
+          <item>
+            <itextId>cookingsource-4</itextId>
+            <name>charcoal</name>
+          </item>
+          <item>
+            <itextId>cookingsource-5</itextId>
+            <name>firewood</name>
+          </item>
+          <item>
+            <itextId>cookingsource-6</itextId>
+            <name>paraffin</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="utilities">
+        <root>
+          <item>
+            <itextId>utilities-0</itextId>
+            <name>internet</name>
+          </item>
+          <item>
+            <itextId>utilities-1</itextId>
+            <name>smartphone</name>
+          </item>
+          <item>
+            <itextId>utilities-2</itextId>
+            <name>TV</name>
+          </item>
+          <item>
+            <itextId>utilities-3</itextId>
+            <name>ac</name>
+          </item>
+          <item>
+            <itextId>utilities-4</itextId>
+            <name>pc</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="agreescale">
+        <root>
+          <item>
+            <itextId>agreescale-0</itextId>
+            <name>-2</name>
+          </item>
+          <item>
+            <itextId>agreescale-1</itextId>
+            <name>-1</name>
+          </item>
+          <item>
+            <itextId>agreescale-2</itextId>
+            <name>0</name>
+          </item>
+          <item>
+            <itextId>agreescale-3</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>agreescale-4</itextId>
+            <name>2</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="foodgroups">
+        <root>
+          <item>
+            <itextId>foodgroups-0</itextId>
+            <name>cereals</name>
+          </item>
+          <item>
+            <itextId>foodgroups-1</itextId>
+            <name>whiterootsandtubers</name>
+          </item>
+          <item>
+            <itextId>foodgroups-2</itextId>
+            <name>veg_vitamina</name>
+          </item>
+          <item>
+            <itextId>foodgroups-3</itextId>
+            <name>veg_darkgreenleafy</name>
+          </item>
+          <item>
+            <itextId>foodgroups-4</itextId>
+            <name>veg_other</name>
+          </item>
+          <item>
+            <itextId>foodgroups-5</itextId>
+            <name>fruits_vitamina</name>
+          </item>
+          <item>
+            <itextId>foodgroups-6</itextId>
+            <name>fruits_other</name>
+          </item>
+          <item>
+            <itextId>foodgroups-7</itextId>
+            <name>meat_organ</name>
+          </item>
+          <item>
+            <itextId>foodgroups-8</itextId>
+            <name>meat_flesh</name>
+          </item>
+          <item>
+            <itextId>foodgroups-9</itextId>
+            <name>eggs</name>
+          </item>
+          <item>
+            <itextId>foodgroups-10</itextId>
+            <name>fish_seafood</name>
+          </item>
+          <item>
+            <itextId>foodgroups-11</itextId>
+            <name>legumes_nuts_seeds</name>
+          </item>
+          <item>
+            <itextId>foodgroups-12</itextId>
+            <name>milk</name>
+          </item>
+          <item>
+            <itextId>foodgroups-13</itextId>
+            <name>oils_fats</name>
+          </item>
+          <item>
+            <itextId>foodgroups-14</itextId>
+            <name>sweets</name>
+          </item>
+          <item>
+            <itextId>foodgroups-15</itextId>
+            <name>spices_cond_bev</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="foodenvlocation">
+        <root>
+          <item>
+            <itextId>foodenvlocation-0</itextId>
+            <name>home</name>
+          </item>
+          <item>
+            <itextId>foodenvlocation-1</itextId>
+            <name>street</name>
+          </item>
+          <item>
+            <itextId>foodenvlocation-2</itextId>
+            <name>neighbourhood</name>
+          </item>
+          <item>
+            <itextId>foodenvlocation-3</itextId>
+            <name>adminunit</name>
+          </item>
+          <item>
+            <itextId>foodenvlocation-4</itextId>
+            <name>district</name>
+          </item>
+          <item>
+            <itextId>foodenvlocation-5</itextId>
+            <name>city</name>
+          </item>
+          <item>
+            <itextId>foodenvlocation-6</itextId>
+            <name>country</name>
+          </item>
+          <item>
+            <itextId>foodenvlocation-7</itextId>
+            <name>abroad</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="foodenvreason">
+        <root>
+          <item>
+            <itextId>foodenvreason-0</itextId>
+            <name>trust</name>
+          </item>
+          <item>
+            <itextId>foodenvreason-1</itextId>
+            <name>cheap</name>
+          </item>
+          <item>
+            <itextId>foodenvreason-2</itextId>
+            <name>close</name>
+          </item>
+          <item>
+            <itextId>foodenvreason-3</itextId>
+            <name>healthy</name>
+          </item>
+          <item>
+            <itextId>foodenvreason-4</itextId>
+            <name>quality</name>
+          </item>
+          <item>
+            <itextId>foodenvreason-5</itextId>
+            <name>assortment</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="receivegive">
+        <root>
+          <item>
+            <itextId>receivegive-0</itextId>
+            <name>receive</name>
+          </item>
+          <item>
+            <itextId>receivegive-1</itextId>
+            <name>give</name>
+          </item>
+          <item>
+            <itextId>receivegive-2</itextId>
+            <name>noexchange</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="dayweek">
+        <root>
+          <item>
+            <itextId>dayweek-0</itextId>
+            <name>day</name>
+          </item>
+          <item>
+            <itextId>dayweek-1</itextId>
+            <name>week</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="frequency">
+        <root>
+          <item>
+            <itextId>frequency-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>frequency-1</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>frequency-2</itextId>
+            <name>3</name>
+          </item>
+          <item>
+            <itextId>frequency-3</itextId>
+            <name>4</name>
+          </item>
+          <item>
+            <itextId>frequency-4</itextId>
+            <name>5</name>
+          </item>
+          <item>
+            <itextId>frequency-5</itextId>
+            <name>6</name>
+          </item>
+          <item>
+            <itextId>frequency-6</itextId>
+            <name>7</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="previouslocation">
+        <root>
+          <item>
+            <itextId>previouslocation-0</itextId>
+            <name>none</name>
+          </item>
+          <item>
+            <itextId>previouslocation-1</itextId>
+            <name>NUA</name>
+          </item>
+          <item>
+            <itextId>previouslocation-2</itextId>
+            <name>city</name>
+          </item>
+          <item>
+            <itextId>previouslocation-3</itextId>
+            <name>country</name>
+          </item>
+          <item>
+            <itextId>previouslocation-4</itextId>
+            <name>abroad</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="ethnicity">
+        <root>
+          <item>
+            <itextId>ethnicity-0</itextId>
+            <name>kinh</name>
+          </item>
+          <item>
+            <itextId>ethnicity-1</itextId>
+            <name>muong</name>
+          </item>
+          <item>
+            <itextId>ethnicity-2</itextId>
+            <name>tay</name>
+          </item>
+          <item>
+            <itextId>ethnicity-3</itextId>
+            <name>thai</name>
+          </item>
+          <item>
+            <itextId>ethnicity-4</itextId>
+            <name>mixed</name>
+          </item>
+          <item>
+            <itextId>ethnicity-5</itextId>
+            <name>other</name>
+          </item>
+          <item>
+            <itextId>ethnicity-6</itextId>
+            <name>dontknow</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="longbien_neighbourhoods">
+        <root>
+          <item>
+            <itextId>longbien_neighbourhoods-0</itextId>
+            <name>anlac</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-1</itextId>
+            <name>doclap</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-2</itextId>
+            <name>dongduha</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-3</itextId>
+            <name>ducgiang</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-4</itextId>
+            <name>khutapthe</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-5</itextId>
+            <name>langtram</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-6</itextId>
+            <name>lamdu</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-7</itextId>
+            <name>pholemat</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-8</itextId>
+            <name>phucloi</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-9</itextId>
+            <name>saidong</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-10</itextId>
+            <name>thachban</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-11</itextId>
+            <name>thachcaueast</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-12</itextId>
+            <name>thachcauwest</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-13</itextId>
+            <name>thongnhat</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-14</itextId>
+            <name>thonngo</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-15</itextId>
+            <name>thongvang</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-16</itextId>
+            <name>thuonghoi</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-17</itextId>
+            <name>tudinh</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-18</itextId>
+            <name>viethung</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-19</itextId>
+            <name>vinhomesriverside</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-20</itextId>
+            <name>xombai</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-21</itextId>
+            <name>xomle</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-22</itextId>
+            <name>xuandoha</name>
+          </item>
+          <item>
+            <itextId>longbien_neighbourhoods-23</itextId>
+            <name>LongBien_other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="typh_prepare">
+        <root>
+          <item>
+            <itextId>typh_prepare-0</itextId>
+            <name>stockpiling</name>
+          </item>
+          <item>
+            <itextId>typh_prepare-1</itextId>
+            <name>securing</name>
+          </item>
+          <item>
+            <itextId>typh_prepare-2</itextId>
+            <name>securing_away</name>
+          </item>
+          <item>
+            <itextId>typh_prepare-3</itextId>
+            <name>adjusting_hours</name>
+          </item>
+          <item>
+            <itextId>typh_prepare-4</itextId>
+            <name>relocating</name>
+          </item>
+          <item>
+            <itextId>typh_prepare-5</itextId>
+            <name>strengthening_infrastructure</name>
+          </item>
+          <item>
+            <itextId>typh_prepare-6</itextId>
+            <name>diversifying_products</name>
+          </item>
+          <item>
+            <itextId>typh_prepare-7</itextId>
+            <name>collaborating_withs</name>
+          </item>
+          <item>
+            <itextId>typh_prepare-8</itextId>
+            <name>saving_cash</name>
+          </item>
+          <item>
+            <itextId>typh_prepare-9</itextId>
+            <name>communicating_customers</name>
+          </item>
+          <item>
+            <itextId>typh_prepare-10</itextId>
+            <name>contingency_poweroutages</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="typh_cope">
+        <root>
+          <item>
+            <itextId>typh_cope-0</itextId>
+            <name>close_full</name>
+          </item>
+          <item>
+            <itextId>typh_cope-1</itextId>
+            <name>close_typhoon</name>
+          </item>
+          <item>
+            <itextId>typh_cope-2</itextId>
+            <name>inside_home</name>
+          </item>
+          <item>
+            <itextId>typh_cope-3</itextId>
+            <name>inside_here</name>
+          </item>
+          <item>
+            <itextId>typh_cope-4</itextId>
+            <name>cheaper</name>
+          </item>
+          <item>
+            <itextId>typh_cope-5</itextId>
+            <name>more_expensive</name>
+          </item>
+          <item>
+            <itextId>typh_cope-6</itextId>
+            <name>sharing</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="typh_financial">
+        <root>
+          <item>
+            <itextId>typh_financial-0</itextId>
+            <name>severe_not</name>
+          </item>
+          <item>
+            <itextId>typh_financial-1</itextId>
+            <name>severe_partly</name>
+          </item>
+          <item>
+            <itextId>typh_financial-2</itextId>
+            <name>severe_fully</name>
+          </item>
+          <item>
+            <itextId>typh_financial-3</itextId>
+            <name>moderate_not</name>
+          </item>
+          <item>
+            <itextId>typh_financial-4</itextId>
+            <name>moderate_party</name>
+          </item>
+          <item>
+            <itextId>typh_financial-5</itextId>
+            <name>moderate_fully</name>
+          </item>
+          <item>
+            <itextId>typh_financial-6</itextId>
+            <name>no_losses</name>
+          </item>
+          <item>
+            <itextId>typh_financial-7</itextId>
+            <name>better_situation</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="typh_damages">
+        <root>
+          <item>
+            <itextId>typh_damages-0</itextId>
+            <name>severe_not</name>
+          </item>
+          <item>
+            <itextId>typh_damages-1</itextId>
+            <name>severe_partly</name>
+          </item>
+          <item>
+            <itextId>typh_damages-2</itextId>
+            <name>severe_fully</name>
+          </item>
+          <item>
+            <itextId>typh_damages-3</itextId>
+            <name>moderate_not</name>
+          </item>
+          <item>
+            <itextId>typh_damages-4</itextId>
+            <name>moderate_party</name>
+          </item>
+          <item>
+            <itextId>typh_damages-5</itextId>
+            <name>moderate_fully</name>
+          </item>
+          <item>
+            <itextId>typh_damages-6</itextId>
+            <name>no_damages</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="wastequantities">
+        <root>
+          <item>
+            <itextId>wastequantities-0</itextId>
+            <name>0</name>
+          </item>
+          <item>
+            <itextId>wastequantities-1</itextId>
+            <name>0.1</name>
+          </item>
+          <item>
+            <itextId>wastequantities-2</itextId>
+            <name>0.5</name>
+          </item>
+          <item>
+            <itextId>wastequantities-3</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>wastequantities-4</itextId>
+            <name>3</name>
+          </item>
+          <item>
+            <itextId>wastequantities-5</itextId>
+            <name>5</name>
+          </item>
+          <item>
+            <itextId>wastequantities-6</itextId>
+            <name>10</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="wastereasons">
+        <root>
+          <item>
+            <itextId>wastereasons-0</itextId>
+            <name>deteriorated</name>
+          </item>
+          <item>
+            <itextId>wastereasons-1</itextId>
+            <name>usebydate</name>
+          </item>
+          <item>
+            <itextId>wastereasons-2</itextId>
+            <name>unappetizing</name>
+          </item>
+          <item>
+            <itextId>wastereasons-3</itextId>
+            <name>toomuch</name>
+          </item>
+          <item>
+            <itextId>wastereasons-4</itextId>
+            <name>toomanyingredients</name>
+          </item>
+          <item>
+            <itextId>wastereasons-5</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="wasteuses">
+        <root>
+          <item>
+            <itextId>wasteuses-0</itextId>
+            <name>throwaway</name>
+          </item>
+          <item>
+            <itextId>wasteuses-1</itextId>
+            <name>giveaway</name>
+          </item>
+          <item>
+            <itextId>wasteuses-2</itextId>
+            <name>foodbank</name>
+          </item>
+          <item>
+            <itextId>wasteuses-3</itextId>
+            <name>composting_community</name>
+          </item>
+          <item>
+            <itextId>wasteuses-4</itextId>
+            <name>composting_hh</name>
+          </item>
+          <item>
+            <itextId>wasteuses-5</itextId>
+            <name>animalfood</name>
+          </item>
+          <item>
+            <itextId>wasteuses-6</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="dayweekmonth">
+        <root>
+          <item>
+            <itextId>dayweekmonth-0</itextId>
+            <name>day</name>
+          </item>
+          <item>
+            <itextId>dayweekmonth-1</itextId>
+            <name>week</name>
+          </item>
+          <item>
+            <itextId>dayweekmonth-2</itextId>
+            <name>month</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/Time" jr:preload="timestamp" type="dateTime" jr:preloadParams="start"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/end" jr:preload="timestamp" type="dateTime" jr:preloadParams="end"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/deviceid" jr:preload="property" type="string" jr:preloadParams="deviceid"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/general/location" type="geopoint"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/general/surveyorname" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/general/vendortype" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/general/GI_I_THI_U_Xin_ch_o_l_i_n_i_c_a_b_n_ch_a" readonly="true()" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/general/verbalconsent" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/general/Kh_ng_c_ph_p_D_ng_a_ra_l_do_t_ch_i" readonly="true()" type="string" relevant="selected( /aXPD7SjcAqN7pmqJe3mFbA/general/verbalconsent , 'no')"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/general/refusalreason" type="string" relevant="selected( /aXPD7SjcAqN7pmqJe3mFbA/general/verbalconsent , 'no')"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/general/refusalreason_other" type="string" relevant="selected(../refusalreason, 'other')"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/general/neighborhood" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_gender" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/vendor/age" type="int"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_owner" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/vendor/staff" type="int"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_ethn" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_ethn_other" type="string" relevant="selected(../resp_ethn, 'other')"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity/foodgroups" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity/wholeorprocessed" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/location_001/locationtime" type="int"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/location_001/previouslocation" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/location_001/previouslocationNUA" type="string" relevant="selected( /aXPD7SjcAqN7pmqJe3mFbA/location_001/previouslocation , 'NUA')"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/location_001/homelocation" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/location_001/reason" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/bridge_city" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/customers_neighb" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/customers_passersby" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/supplychain" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/safe_reputation" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/flooding" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/infrastructure" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/presence" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/absence" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/schools" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/leisure" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/statements/B_n_ng_hay_kh_ng_h_ng_tuy_n_b_sau_y" readonly="true()" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/statements/customers_wealth" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/statements/customers_ethn" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/statements/rathersomewhereelse" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/statements/ratherothersector" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/statements/_5yr_changesector" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/statements/_5yr_changelocation" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/B_y_gi_h_y_ngh_n_ng_g_n_y_nh_t_Yagi" readonly="true()" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_prepare" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_cope" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_financial" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_damages" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_amount" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_amount_unit" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_freq" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_mainreason" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_whatdo" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/debriefing/Xin_ch_n_th_nh_c_m_m_t_ng_y_th_t_vui_v" readonly="true()" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/end_001/_y_l_ph_n_k_t_th_c_c_k_t_n_i_internet" readonly="true()" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/end_001/picture" type="binary"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/comments" type="string"/>
+      <bind nodeset="/aXPD7SjcAqN7pmqJe3mFbA/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/aXPD7SjcAqN7pmqJe3mFbA/general">
+      <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/general:label')"/>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/general/location">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/general/location:label')"/>
+      </input>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/general/surveyorname">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/general/surveyorname:label')"/>
+        <itemset nodeset="instance('surveyors')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/general/vendortype">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/general/vendortype:label')"/>
+        <itemset nodeset="instance('vendortype')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/general/GI_I_THI_U_Xin_ch_o_l_i_n_i_c_a_b_n_ch_a">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/general/GI_I_THI_U_Xin_ch_o_l_i_n_i_c_a_b_n_ch_a:label')"/>
+      </input>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/general/verbalconsent">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/general/verbalconsent:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/general/Kh_ng_c_ph_p_D_ng_a_ra_l_do_t_ch_i">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/general/Kh_ng_c_ph_p_D_ng_a_ra_l_do_t_ch_i:label')"/>
+      </input>
+      <select ref="/aXPD7SjcAqN7pmqJe3mFbA/general/refusalreason">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/general/refusalreason:label')"/>
+        <itemset nodeset="instance('refuse_reasons')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/general/refusalreason_other">
+        <label>Specify other.</label>
+      </input>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/general/neighborhood">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/general/neighborhood:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/aXPD7SjcAqN7pmqJe3mFbA/vendor">
+      <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/vendor:label')"/>
+      <select1 ref="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_gender">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_gender:label')"/>
+        <itemset nodeset="instance('gender')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/vendor/age">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/vendor/age:label')"/>
+      </input>
+      <select1 ref="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_owner">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_owner:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/vendor/staff">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/vendor/staff:label')"/>
+      </input>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_ethn">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_ethn:label')"/>
+        <itemset nodeset="instance('ethnicity')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/vendor/resp_ethn_other">
+        <label>Specify other.</label>
+      </input>
+    </group>
+    <group ref="/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity">
+      <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity:label')"/>
+      <select ref="/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity/foodgroups">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity/foodgroups:label')"/>
+        <itemset nodeset="instance('foodgroups')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select1 ref="/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity/wholeorprocessed">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/fooddiversity/wholeorprocessed:label')"/>
+        <itemset nodeset="instance('whole_processed')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/aXPD7SjcAqN7pmqJe3mFbA/location_001">
+      <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/location_001:label')"/>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/location_001/locationtime">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/location_001/locationtime:label')"/>
+      </input>
+      <select1 ref="/aXPD7SjcAqN7pmqJe3mFbA/location_001/previouslocation">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/location_001/previouslocation:label')"/>
+        <itemset nodeset="instance('previouslocation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/aXPD7SjcAqN7pmqJe3mFbA/location_001/previouslocationNUA">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/location_001/previouslocationNUA:label')"/>
+        <itemset nodeset="instance('longbien_neighbourhoods')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/aXPD7SjcAqN7pmqJe3mFbA/location_001/homelocation">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/location_001/homelocation:label')"/>
+        <itemset nodeset="instance('foodenvlocation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/location_001/reason">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/location_001/reason:label')"/>
+      </input>
+    </group>
+    <group ref="/aXPD7SjcAqN7pmqJe3mFbA/movefactors">
+      <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/movefactors:label')"/>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/bridge_city">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/movefactors/bridge_city:label')"/>
+        <itemset nodeset="instance('importancescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/customers_neighb">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/movefactors/customers_neighb:label')"/>
+        <itemset nodeset="instance('importancescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/customers_passersby">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/movefactors/customers_passersby:label')"/>
+        <itemset nodeset="instance('importancescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/supplychain">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/movefactors/supplychain:label')"/>
+        <itemset nodeset="instance('importancescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/safe_reputation">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/movefactors/safe_reputation:label')"/>
+        <itemset nodeset="instance('importancescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/flooding">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/movefactors/flooding:label')"/>
+        <itemset nodeset="instance('importancescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/infrastructure">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/movefactors/infrastructure:label')"/>
+        <itemset nodeset="instance('importancescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/presence">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/movefactors/presence:label')"/>
+        <itemset nodeset="instance('importancescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/absence">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/movefactors/absence:label')"/>
+        <itemset nodeset="instance('importancescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/schools">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/movefactors/schools:label')"/>
+        <itemset nodeset="instance('importancescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/movefactors/leisure">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/movefactors/leisure:label')"/>
+        <itemset nodeset="instance('importancescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group ref="/aXPD7SjcAqN7pmqJe3mFbA/statements">
+      <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/statements:label')"/>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/statements/B_n_ng_hay_kh_ng_h_ng_tuy_n_b_sau_y">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/statements/B_n_ng_hay_kh_ng_h_ng_tuy_n_b_sau_y:label')"/>
+      </input>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/statements/customers_wealth">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/statements/customers_wealth:label')"/>
+        <itemset nodeset="instance('agreescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/statements/customers_ethn">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/statements/customers_ethn:label')"/>
+        <itemset nodeset="instance('agreescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/statements/rathersomewhereelse">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/statements/rathersomewhereelse:label')"/>
+        <itemset nodeset="instance('agreescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/statements/ratherothersector">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/statements/ratherothersector:label')"/>
+        <itemset nodeset="instance('agreescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/statements/_5yr_changesector">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/statements/_5yr_changesector:label')"/>
+        <itemset nodeset="instance('agreescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 appearance="quick" ref="/aXPD7SjcAqN7pmqJe3mFbA/statements/_5yr_changelocation">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/statements/_5yr_changelocation:label')"/>
+        <itemset nodeset="instance('agreescale')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group ref="/aXPD7SjcAqN7pmqJe3mFbA/typhoon">
+      <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/typhoon:label')"/>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/B_y_gi_h_y_ngh_n_ng_g_n_y_nh_t_Yagi">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/typhoon/B_y_gi_h_y_ngh_n_ng_g_n_y_nh_t_Yagi:label')"/>
+      </input>
+      <select ref="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_prepare">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_prepare:label')"/>
+        <itemset nodeset="instance('typh_prepare')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_cope">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_cope:label')"/>
+        <itemset nodeset="instance('typh_cope')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select1 ref="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_financial">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_financial:label')"/>
+        <itemset nodeset="instance('typh_financial')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_damages">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/typhoon/typhoon_damages:label')"/>
+        <itemset nodeset="instance('typh_damages')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group ref="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste">
+      <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/foodwaste:label')"/>
+      <select1 ref="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_amount">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_amount:label')"/>
+        <itemset nodeset="instance('wastequantities')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_amount_unit">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_amount_unit:label')"/>
+        <itemset nodeset="instance('dayweekmonth')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_freq">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_freq:label')"/>
+        <itemset nodeset="instance('frequency')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select ref="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_mainreason">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_mainreason:label')"/>
+        <itemset nodeset="instance('wastereasons')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_whatdo">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/foodwaste/foodwaste_whatdo:label')"/>
+        <itemset nodeset="instance('wasteuses')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/aXPD7SjcAqN7pmqJe3mFbA/debriefing">
+      <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/debriefing:label')"/>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/debriefing/Xin_ch_n_th_nh_c_m_m_t_ng_y_th_t_vui_v">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/debriefing/Xin_ch_n_th_nh_c_m_m_t_ng_y_th_t_vui_v:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/aXPD7SjcAqN7pmqJe3mFbA/end_001">
+      <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/end_001:label')"/>
+      <input ref="/aXPD7SjcAqN7pmqJe3mFbA/end_001/_y_l_ph_n_k_t_th_c_c_k_t_n_i_internet">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/end_001/_y_l_ph_n_k_t_th_c_c_k_t_n_i_internet:label')"/>
+      </input>
+      <upload mediatype="image/*" ref="/aXPD7SjcAqN7pmqJe3mFbA/end_001/picture">
+        <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/end_001/picture:label')"/>
+      </upload>
+    </group>
+    <input ref="/aXPD7SjcAqN7pmqJe3mFbA/comments">
+      <label ref="jr:itext('/aXPD7SjcAqN7pmqJe3mFbA/comments:label')"/>
+    </input>
+  </h:body>
+</h:html>
